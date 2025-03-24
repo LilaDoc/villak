@@ -1,21 +1,21 @@
 import styles from './App.module.css'
 import Header from './Header'
-import heroImage from '../assets/hero.jpg'
-import person from '../assets/person.svg'
-import bed from '../assets/bed.svg'
-import shower from '../assets/shower.svg'
-import wifi from '../assets/wifi.svg'
-import clim from '../assets/clim.svg'
-import water from '../assets/water.svg'
-import map from '../assets/map.png'
-import beach from '../assets/beach.jpg'
-import adventure from '../assets/adventure.jpg'
-import decouverte from '../assets/decouverte.jpg'
-import yard from '../assets/yard.svg'
-import bebechambre from '../assets/bebechambre.svg'
-import lavelinge from '../assets/lavelinge.svg'
-import tv from '../assets/tv.svg'
-import cafe from '../assets/cafe.svg'
+import heroImage from './assets/hero.jpg'
+import person from './assets/person.svg'
+import bed from './assets/bed.svg'
+import shower from './assets/shower.svg'
+import wifi from './assets/wifi.svg'
+import clim from './assets/clim.svg'
+import water from './assets/water.svg'
+import map from './assets/map.png'
+import beach from './assets/beach.jpg'
+import adventure from './assets/adventure.jpg'
+import decouverte from './assets/decouverte.jpg'
+import yard from './assets/yard.svg'
+import bebechambre from './assets/bebechambre.svg'
+import lavelinge from './assets/lavelinge.svg'
+import tv from './assets/tv.svg'
+import cafe from './assets/cafe.svg'
 // import Video from './components/Video'
 
 function App() {
@@ -221,7 +221,7 @@ function App() {
           </div>
           <div className={styles.aventureContent}>
             <div className={styles.aventureImage}>
-              <img src= {aventure} alt="About" fill={true} />
+              <img src= {adventure} alt="About" fill={true} />
             </div>
             <div className={styles.aventureText}>
               <p>

@@ -1,6 +1,21 @@
 import styles from './App.module.css'
 import Header from './Header'
-
+import heroImage from '../assets/hero.jpg'
+import person from '../assets/person.svg'
+import bed from '../assets/bed.svg'
+import shower from '../assets/shower.svg'
+import wifi from '../assets/wifi.svg'
+import clim from '../assets/clim.svg'
+import water from '../assets/water.svg'
+import map from '../assets/map.png'
+import beach from '../assets/beach.jpg'
+import adventure from '../assets/adventure.jpg'
+import decouverte from '../assets/decouverte.jpg'
+import yard from '../assets/yard.svg'
+import bebechambre from '../assets/bebechambre.svg'
+import lavelinge from '../assets/lavelinge.svg'
+import tv from '../assets/tv.svg'
+import cafe from '../assets/cafe.svg'
 // import Video from './components/Video'
 
 function App() {
@@ -14,7 +29,7 @@ function App() {
         </div>
         <section className={styles.hero}>
           <img 
-          src="/hero.jpg" 
+          src={heroImage} 
           alt="Hero" 
           className={styles.heroImage}
           />
@@ -49,7 +64,7 @@ function App() {
             <div className={styles.cardContainer}>
                 <div className={styles.card}>
                   <div className={styles.cardImage}>
-                    <img src="/person.svg" alt="About" height={72} width={72} />
+                    <img src={person} alt="About" height={72} width={72} />
                   </div>
                   <p>
                     6
@@ -60,7 +75,7 @@ function App() {
                 </div>
                 <div className={styles.card}>
                   <div className={styles.cardImage}>
-                    <img src="/bed.svg" alt="About" height={72} width={72} /> 
+                    <img src={bed} alt="About" height={72} width={72} /> 
                   </div>
                   <p>
                     2 
@@ -71,7 +86,7 @@ function App() {
                 </div>
                 <div className={styles.card}>
                   <div className={styles.cardImage}>
-                    <img src="/shower.svg" alt="About" height={72} width={72} />
+                    <img src={shower} alt="About" height={72} width={72} />
                   </div>
                   <p>
                     1
@@ -92,7 +107,7 @@ function App() {
                <div className={styles.aboutServicesList}>
                 <div className={styles.aboutServicesItem}>
                     <div className={styles.aboutServicesItemImage}>
-                    <img src="/wifi.svg" alt="About" height={30} width={30} />
+                    <img src={wifi} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     WIFI
@@ -100,7 +115,7 @@ function App() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/clim.svg" alt="About" height={30} width={30} />
+                    <img src={clim} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     CLIMATISATION
@@ -108,7 +123,7 @@ function App() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/water.svg" alt="About" height={30} width={30} />
+                    <img src={water} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     CITERNE D'EAU
@@ -118,7 +133,7 @@ function App() {
                <div className={styles.aboutServicesList}>
                <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/car.svg" alt="About" height={30} width={30} />
+                    <img src={car} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     PARKING
@@ -126,7 +141,7 @@ function App() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/yard.svg" alt="About" height={30} width={30} />
+                    <img src={yard} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     JARDIN & TERRASSSE
@@ -134,7 +149,7 @@ function App() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/bebechambre.svg" alt="About" height={30} width={30} />
+                    <img src={bebechambre} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     LIT BÉbÉ
@@ -144,7 +159,7 @@ function App() {
                <div className={styles.aboutServicesList}>
                <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/lavelinge.svg" alt="About" height={30} width={30} />
+                    <img src={lavelinge} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     LAVE-LINGE
@@ -152,7 +167,7 @@ function App() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/tv.svg" alt="About" height={30} width={30} />
+                    <img src={tv} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     TV
@@ -160,7 +175,7 @@ function App() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/cafe.svg" alt="About" height={30} width={30} />
+                    <img src={cafe} alt="About" height={30} width={30} />
                   </div>
                   <p>
                     MACHINE À CAFÉ
@@ -173,7 +188,7 @@ function App() {
       </section>
       <section className={styles.locationSection}>
         <div className={styles.locationContainer}>
-            <img src="/map.png" alt="About" fill={true} />
+            <img src={map} alt="About" fill={true} />
           
         </div>
 
@@ -185,7 +200,7 @@ function App() {
           </div>
           <div className={styles.decouverteContent}>
             <div className={styles.decouverteImage}>
-                <img src="/beach.jpg" alt="About" fill={true} />
+                <img src={beach} alt="About" fill={true} />
             </div>
             <div className={styles.decouverteText}>
               <p>
@@ -206,7 +221,7 @@ function App() {
           </div>
           <div className={styles.aventureContent}>
             <div className={styles.aventureImage}>
-              <img src="/aventure.jpg" alt="About" fill={true} />
+              <img src= {aventure} alt="About" fill={true} />
             </div>
             <div className={styles.aventureText}>
               <p>
@@ -227,7 +242,7 @@ function App() {
           </div>
           <div className={styles.decouverteContent}>
             <div className={styles.decouverteImage}>
-                <img src="/decouverte.jpg" alt="About" fill={true} />
+                <img src={decouverte} alt="About" fill={true} />
             </div>
             <div className={styles.decouverteText}>
               <p>

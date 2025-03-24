@@ -9,7 +9,7 @@ import clim from './assets/clim.svg'
 import water from './assets/water.svg'
 import map from './assets/map.png'
 import beach from './assets/beach.jpg'
-import adventure from './assets/adventure.jpg'
+import aventure from './assets/aventure.jpg'
 import decouverte from './assets/decouverte.jpg'
 import yard from './assets/yard.svg'
 import bebechambre from './assets/bebechambre.svg'
@@ -221,7 +221,7 @@ function App() {
           </div>
           <div className={styles.aventureContent}>
             <div className={styles.aventureImage}>
-              <img src= {adventure} alt="About" fill={true} />
+              <img src= {aventure} alt="About" fill={true} />
             </div>
             <div className={styles.aventureText}>
               <p>

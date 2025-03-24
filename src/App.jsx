@@ -16,6 +16,7 @@ import bebechambre from './assets/bebechambre.svg'
 import lavelinge from './assets/lavelinge.svg'
 import tv from './assets/tv.svg'
 import cafe from './assets/cafe.svg'
+import car from './assets/car.svg'
 // import Video from './components/Video'
 
 function App() {

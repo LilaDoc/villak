@@ -77,7 +77,7 @@ function App() {
                       <img src={bed} alt="About" className={styles.icon} />
                     </div>
                     <p>2</p>
-                    <p>CHAMBRES</p>
+                    <p>CHAMBRES</p> 
                   </div>
                   <div className={styles.card}>
                     <div className={styles.cardImage}>

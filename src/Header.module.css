@@ -10,19 +10,20 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: start;
       width: 100%;
       height: 100%;
       padding: 2rem;
     }
   
     .logo p{
-  
+      font-size: 2rem;
       font-weight: 400;
-    
+      color: rgb(255, 255, 255);
+
     }
   
-    .navLinks {
+    /* .navLinks {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -34,8 +35,10 @@
       text-decoration: none;
       color: inherit;
       font-size: 1.25rem;
+    } */
+    
+  
+    
+    h1 {
+      font-size: 64px;
     }
-    
-  
-    
-  

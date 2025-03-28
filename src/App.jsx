@@ -1,6 +1,6 @@
 import styles from './App.module.css'
 import Header from './Header'
-import heroImage from './assets/hero.jpg'
+import heroImage from './assets/palmier.jpg'
 import person from './assets/person.svg'
 import bed from './assets/bed.svg'
 import shower from './assets/shower.svg'
@@ -18,6 +18,7 @@ import tv from './assets/tv.svg'
 import cafe from './assets/cafe.svg'
 import car from './assets/car.svg'  
 import Caroussel from './Caroussel'
+import Arrow from './Down-arrow';
 // import Video from './components/Video'
 
 function App() {
@@ -36,7 +37,15 @@ function App() {
             alt="Hero" 
             className={styles.heroImage}
             />
-            <h1>La Villa K'ribean</h1>
+            <div className={styles.heroOverlay}>
+              <h1>VILLA K'RIBEAN</h1>
+              <div className={styles.heroText}>
+                LOCATION DE VACANCES AU MOULE
+              </div>
+            </div>
+            <div className={styles.heroButton}>
+              <Arrow color="#ffffff" width="100" height="100" />
+            </div>
             {/* add menu button  */}
           </section>
         </section>
@@ -180,7 +189,7 @@ function App() {
         </section>
         <section className={styles.locationSection}>
           <div className={styles.locationContainer}>
-              <img src={map} alt="About" fill={true} />
+              <img src={map} alt="About"  />
             
           </div>
 
@@ -192,7 +201,7 @@ function App() {
             </div>
             <div className={styles.decouverteContent}>
               <div className={styles.decouverteImage}>
-                  <img src={beach} alt="About" fill={true} />
+                  <img src={beach} alt="About"  />
               </div>
               <div className={styles.decouverteText}>
                 <p>
@@ -213,7 +222,7 @@ function App() {
             </div>
             <div className={styles.aventureContent}>
               <div className={styles.aventureImage}>
-                <img src= {aventure} alt="About" fill={true} />
+                <img src= {aventure} alt="About"  />
               </div>
               <div className={styles.aventureText}>
                 <p>
@@ -234,7 +243,7 @@ function App() {
             </div>
             <div className={styles.decouverteContent}>
               <div className={styles.decouverteImage}>
-                  <img src={decouverte} alt="About" fill={true} />
+                  <img src={decouverte} alt="About"  />
               </div>
               <div className={styles.decouverteText}>
                 <p>

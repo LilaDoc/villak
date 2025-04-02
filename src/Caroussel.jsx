@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from './Caroussel.module.css'
+import styles from './App.module.css'
 import React from 'react'
 function Caroussel() {
     return (

@@ -1,0 +1,28 @@
+
+.videoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .videoContainer {
+    padding: 2rem;
+  }
+  
+  .videoSection h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .videoSection p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 2rem;
+  }

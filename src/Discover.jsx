@@ -1,4 +1,4 @@
-import styles from './Discover.module.css'
+import styles from './App.module.css'
 import React from 'react';
 import beach from './assets/beach.jpg'
 import aventure from './assets/aventure.jpg'

@@ -164,3 +164,37 @@
     color: rgb(0, 0, 0);
     padding-left: 1rem;
   }
+
+
+  .aboutContainer {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .aboutCarousel, .aboutTextContainer {
+    width: 100%;
+    max-width: 620px;
+    margin: 1rem;
+  }
+
+  .aboutText {
+    padding: 2rem;
+  }
+
+  .aboutServicesTitle h2 {
+    font-size: 48px;
+  }
+
+  .aboutServicesContent {
+    flex-direction: column;
+  }
+
+  .aboutServicesList {
+    border-left: none;
+    border-top: 1px solid black;
+    padding: 2rem;
+  }
+
+  .aboutServicesList:first-child {
+    border-top: none;
+  }

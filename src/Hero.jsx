@@ -2,7 +2,7 @@ import React from 'react';
 
 import heroImage from './assets/palmier.jpg';
 import Arrow from './Down-arrow';
-import styles from './Hero.module.css'
+import styles from './App.module.css'
 
 export default function Hero() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './About.module.css'
+import styles from './App.module.css'
 import Caroussel from './Caroussel'
 import person from './assets/person.svg'
 import bed from './assets/bed.svg'

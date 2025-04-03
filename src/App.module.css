@@ -385,17 +385,21 @@
 .decouverteTitle {
   position: relative;
   left: 0;
+  top: 8rem;
   margin-left: 15rem;
-  top: 35%;
   z-index: 3;
+  width: 100%;
+  overflow: visible;
 }
 
 .decouverteTitle h2 {
-  font-size: 112px;
+  font-size: 16rem;
   font-weight: 400;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+ 
 }
+
 
 .decouverteContent {
   display: flex;
@@ -407,13 +411,15 @@
 }
 
 .decouverteImage {
-  width: 320px;
-  height: 320px;
+  width: 42rem;
+  height: 42rem;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
   margin-left: 10rem;
+
 }
+
 
 .decouverteImage img {
   object-fit: cover;
@@ -436,6 +442,31 @@
   color: rgb(0, 0, 0);
   text-align: right;
 }
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1.5s ease-in-out;
+  visibility: visible;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.5s ease-in-out;
+  visibility: visible;
+}
+.showAdventure {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.5s ease-in-out;
+  visibility: visible;
+}
+.hiddenAdventure {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1.5s ease-in-out;
+  visibility: visible;
+}
 
 .aventureSection {
   display: flex;
@@ -455,7 +486,7 @@
 
 }
 .aventureTitle h2 {
-  font-size: 112px;
+  font-size: 16rem;
   font-weight: 400;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -472,19 +503,23 @@
 } 
 
 .aventureImage {
-  width: 320px;
-  height: 320px;
+  width: 560px;
+  height: 560px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
   margin-right: 10rem;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aventureImage img {
-  object-fit: cover;
-  object-position: center 20%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .aventureText {

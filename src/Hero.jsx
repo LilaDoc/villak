@@ -3,25 +3,57 @@ import React from 'react';
 import heroImage from './assets/palmier.jpg';
 import Arrow from './Down-arrow';
 import styles from './App.module.css'
+import { useState, useEffect, useRef } from 'react'
+
+const useElementOnScreen = (options) => {
+  const containerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsVisible(entry.isIntersecting);
+    }, options);
+
+    if (containerRef.current) observer.observe(containerRef.current);
+
+    return () => {
+      if (containerRef.current) observer.unobserve(containerRef.current);
+    };
+  }, [options]);
+
+  return [containerRef, isVisible];
+};
 
 export default function Hero() {
-    return (
-        <section className={styles.hero}>
-        <img 
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [heroTitleRef, isHeroTitleVisible] = useElementOnScreen({
+    threshold: 0.4,
+    rootMargin: '100px 0px 0px 0px'
+  });
+
+  return (
+    <section className={styles.hero}>
+      <img 
         src={heroImage} 
         alt="Hero" 
         className={styles.heroImage}
-        />
-        <div className={styles.heroOverlay}>
-          <h1>VILLA K'RIBEAN</h1>
-          <div className={styles.heroText}>
-            LOCATION DE VACANCES AU MOULE
-          </div>
+        onLoad={() => setImageLoaded(true)}
+      />
+      <h1 
+        ref={heroTitleRef}
+        className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
+      >
+        VILLA K'RIBEAN
+      </h1>
+      <div className={styles.heroOverlay}>
+        <div className={styles.heroText}>
+          LOCATION DE VACANCES AU MOULE
         </div>
-        <div className={styles.heroButton}>
-          <Arrow color="#ffffff" width="100" height="100" />
-        </div>
-        {/* add menu button  */}
-      </section>
-    )
+      </div>
+      <div className={styles.heroButton}>
+        <Arrow color="#ffffff" width="100" height="100" />
+      </div>
+      {/* add menu button  */}
+    </section>
+  );
 }

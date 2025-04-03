@@ -75,6 +75,17 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+.heroTitle {
+  transition: opacity 1.5s ease-in-out;  /* Transition uniquement sur l'opacité */
+}
+
+.showApparition {
+  opacity: 1;
+}
+
+.hiddenApparition {
+  opacity: 0;
+}
 
 .heroButton {
   position: absolute;
@@ -339,7 +350,10 @@
   height: 28vh;
   margin-top: 2rem;
 }
-
+.locationSection img:hover{
+  scale: 1.5;
+  transition: all 0.3s ease;
+}
 .locationContainer {
   display: flex;
   flex-direction: row;

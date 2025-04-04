@@ -13,7 +13,7 @@ import lavelinge from './assets/lavelinge.svg'
 import tv from './assets/tv.svg'
 import cafe from './assets/cafe.svg'
 import car from './assets/car.svg'
-import map from './assets/map.png'
+
 
 export default function About() {
   return (
@@ -25,8 +25,10 @@ export default function About() {
   </div>
   <div className={styles.aboutTextContainer}>
     <div className={styles.aboutText}>
-      <p>
-      Bienvenue à la Villa des K'ribean, une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
+      
+      <h3 className={styles.playfairDisplay}>Bienvenue à la Villa des K'ribean,</h3><p>une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/>
+      Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. <br/>
+      Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
       </p>
     </div>
     <div className={styles.cardText}>

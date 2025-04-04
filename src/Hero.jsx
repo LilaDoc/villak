@@ -47,7 +47,7 @@ export default function Hero() {
       </h1>
       <div className={styles.heroOverlay}>
         <div className={styles.heroText}>
-          LOCATION DE VACANCES AU MOULE
+          <h2>LOCATION DE VACANCES AU MOULE</h2>
         </div>
       </div>
       <div className={styles.heroButton}>

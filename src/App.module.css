@@ -1,3 +1,15 @@
+.playfairDisplay {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.openSans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .page {
   display: flex;
   flex-direction: column;
@@ -5,6 +17,7 @@
   justify-content: center;
   width: auto;
   height: auto;
+  font-family: "Open Sans", sans-serif;
 }
 .landing {
   position: relative;
@@ -115,13 +128,15 @@
   transform: translateY(15px);
 }
 
-.heroText {
+.heroText h2{
   position: absolute;
   top: 90%;
   left: 60%;
   font-size: 20px;
   color: rgb(255, 255, 255);
-  width: 12%;
+  width: 24%;
+  font-weight: 400;
+
 }
 @media screen and (max-width: 1024px) {
   
@@ -174,6 +189,7 @@
   margin-bottom: 2rem;
 }
 
+
 .aboutSection {
   display: flex;
   flex-direction: column;
@@ -216,10 +232,21 @@
 }
 
 .aboutText {
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   width: 100%;
   height: auto;
   padding: 2rem;
   font-size: 18px;
+}
+
+.aboutText h3{
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-align: left;
 }
 
 .icon {
@@ -447,7 +474,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  font-family: "Playfair Display", serif;
   width: 50%;
   height: 50%;
   margin-right: 10rem;
@@ -543,6 +570,7 @@
   font-weight: 400;
   color: rgb(0, 0, 0);
   margin-left: 10rem;
+  font-family: "Playfair Display", serif;
   
 }
 
@@ -576,6 +604,7 @@
   text-align: left;
 }
 .contactContainer p {
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   font-weight: 400;
   color: rgb(0, 0, 0);

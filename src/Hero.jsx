@@ -43,7 +43,7 @@ export default function Hero() {
         ref={heroTitleRef}
         className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
       >
-        VILLA K'RIBEAN
+        <span className="capitalize">V</span>ILLA K'RIBEAN
       </h1>
       <div className={styles.heroOverlay}>
         <div className={styles.heroText}>

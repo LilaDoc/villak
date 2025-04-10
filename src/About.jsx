@@ -26,7 +26,7 @@ export default function About() {
   <div className={styles.aboutTextContainer}>
     <div className={styles.aboutText}>
       
-      <h3 className={styles.playfairDisplay}>Bienvenue à la Villa des K'ribean,</h3><p>une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/>
+      <h3 className={styles.playfairDisplay}><span className="capitalize">B</span>ienvenue à la Villa des K'ribean,</h3><p className={styles.playfairDisplay}>une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/>
       Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. <br/>
       Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
       </p>
@@ -59,13 +59,13 @@ export default function About() {
   </div>
 </div>
 <div className={styles.aboutServicesTitle}>
-    <h2>A VOTRE DISPOSITION</h2>
+    <h2><span className="capitalize">A</span> VOTRE DISPOSITION</h2>
 </div>
 <div className={styles.aboutServices}>
 
   <div className={styles.aboutServicesContent}>
       <div className={styles.aboutServicesList}>
-        <div className={styles.aboutServicesItem}>
+        <div className={styles.aboutServicesItem }>
             <div className={styles.aboutServicesItemImage}>
             <img src={wifi} alt="About" height={30} width={30} />
           </div>

@@ -74,6 +74,7 @@ export default function DiscoverCard( props) {
                     {props.description}
                 </p>
             </div>
+
         </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styles from './App.module.css'
 
-
 const useElementOnScreen = (options) => {
   // Création d'une référence pour l'élément qu'on veut observer
   const containerRef = useRef(null);
@@ -28,43 +27,49 @@ const useElementOnScreen = (options) => {
   return [containerRef, isVisible];
 };
 
-export default function DiscoverCard( props) {
-  // Le titre apparaîtra 100px avant d'entrer dans la vue
+export default function DiscoverCard(props) {
+  // Animation settings for both sections
   const [titleRef, isTitleVisible] = useElementOnScreen({
-    threshold: 0.1,
-    rootMargin: '10px 0px 0px 0px'  // Format: top right bottom left
+    threshold: 0,
+    rootMargin: '100px 0px 0px 0px'
   });
   
-  // L'image apparaîtra 50px avant d'entrer dans la vue
   const [imageRef, isImageVisible] = useElementOnScreen({
-    threshold: 0.1,
-    rootMargin: '30px 0px 0px 0px'
+    threshold: 0,
+    rootMargin: '100px 0px 0px 0px'
   });
   
-  // Le texte apparaîtra exactement quand il entre dans la vue
   const [textRef, isTextVisible] = useElementOnScreen({
-    threshold: 0.1,
-    rootMargin: '0px'
+    threshold: 0,
+    rootMargin: '100px 0px 0px 0px'
   });
 
-  return (
-    <div className={styles.decouverteContainer}>
+  // Determine which styles to use based on the type prop
+  const getAnimationClass = (isVisible) => {
+    if (props.type === 'aventure') {
+      return isVisible ? styles.showAdventure : styles.hiddenAdventure;
+    }
+    return isVisible ? styles.show : styles.hidden;
+  };
+
+  return props.type === 'aventure' ? (
+    <div className={styles.aventureSection}>
         <div 
           ref={titleRef} 
-          className={`${styles.decouverteTitle} ${isTitleVisible ? styles.show : styles.hidden}`}
+          className={`${styles.aventureTitle} ${getAnimationClass(isTitleVisible)}`}
         >
-            <h2>DÉTENTE</h2>
+            <h2>AVENTURE</h2>
         </div>
-        <div className={styles.decouverteContent}>
+        <div className={styles.aventureContent}>
             <div 
               ref={imageRef} 
-              className={`${styles.decouverteImage} ${isImageVisible ? styles.show : styles.hidden}`}
+              className={`${styles.aventureImage} ${getAnimationClass(isImageVisible)}`}
             >
-                <img src={props.image} alt="About" />
+                <img src={props.image} alt="Adventure" />
             </div>
             <div 
               ref={textRef}
-              className={`${styles.decouverteText} ${isTextVisible ? styles.show : styles.hidden}`}
+              className={`${styles.aventureText} ${getAnimationClass(isTextVisible)}`}
             >
                 <p>
                     {props.title}
@@ -74,7 +79,35 @@ export default function DiscoverCard( props) {
                     {props.description}
                 </p>
             </div>
-
+        </div>
+    </div>
+  ) : (
+    <div className={styles.decouverteContainer}>
+        <div 
+          ref={titleRef} 
+          className={`${styles.decouverteTitle} ${getAnimationClass(isTitleVisible)}`}
+        >
+            <h2>DÉTENTE</h2>
+        </div>
+        <div className={styles.decouverteContent}>
+            <div 
+              ref={imageRef} 
+              className={`${styles.decouverteImage} ${getAnimationClass(isImageVisible)}`}
+            >
+                <img src={props.image} alt="About" />
+            </div>
+            <div 
+              ref={textRef}
+              className={`${styles.decouverteText} ${getAnimationClass(isTextVisible)}`}
+            >
+                <p>
+                    {props.title}
+                    <br />
+                    DISTANCE : {props.distance}KM
+                    <br />
+                    {props.description}
+                </p>
+            </div>
         </div>
     </div>
   );

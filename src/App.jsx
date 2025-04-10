@@ -24,7 +24,7 @@ function App() {
         <Video/>
        <About/>
        <Location/>
-        <Discover/>
+        {/* <Discover/> */}
         <Contact/>
       </div>
     </>

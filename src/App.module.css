@@ -414,98 +414,87 @@
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: rgba(209, 187, 168, 1);
   position: relative;
   gap: 5rem;
 }
 
-.decouverteContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
+.decouverteContainer,
+.aventureSection {
   position: relative;
-  height: 50%;
   width: 100%;
-}
-
-.decouverteTitle {
-  position: relative;
-  left: 0;
-  top: 8rem;
-  margin-left: 15rem;
-  z-index: 3;
-  width: 100%;
+  height: auto;
+  min-height: 50vh;
   overflow: visible;
+  margin-bottom: 5rem;
 }
 
-.decouverteTitle h2 {
-  font-size: 48px;
+.decouverteTitle,
+.aventureTitle {
+  position: relative;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  padding-left: 10rem;
+  z-index: 3;
+  visibility: visible;
+  opacity: 1;
+}
+
+.decouverteTitle h2,
+.aventureTitle h2 {
+  font-size: 72px;
   font-weight: 400;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
- 
+  margin: 0;
 }
 
-
-.decouverteContent {
+.decouverteContent,
+.aventureContent {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
+  height: 33vh;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 }
 
-.decouverteImage {
-  width: 32rem;
-  height: 32rem;
-  border-radius: 50%;
+.decouverteImage,
+.aventureImage {
+  width: 50%;
+  height: 100%;
   position: relative;
   z-index: 2;
   overflow: hidden;
-  margin-left: 10rem;
+  border-radius: 5px;
 }
 
-.decouverteBubble {
-  width: 42rem;
-  height: 42rem;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.1);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.decouverteImage img {
-  object-fit: cover;
-  object-position: center 20%;
+.decouverteImage img,
+.aventureImage img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
 }
 
-.decouverteText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Playfair Display", serif;
+.decouverteText,
+.aventureText {
   width: 50%;
-  height: 50%;
+  height: auto;
+  font-family: "Playfair Display", serif;
   margin-right: 10rem;
-  /* font-size: 20px; */
-  font-weight: 400;
-  color: rgb(0, 0, 0);
   text-align: right;
   position: relative;
   z-index: 2;
 }
+
 .hidden {
   opacity: 0;
   transform: translateX(-100%);
@@ -523,78 +512,13 @@
   opacity: 1;
   transform: translateX(0);
   transition: all 1.5s ease-in-out;
-  visibility: visible;
+  visibility: visible !important;
 }
 .hiddenAdventure {
   opacity: 0;
   transform: translateX(100%);
   transition: all 1.5s ease-in-out;
-  visibility: visible;
-}
-
-.aventureSection {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: start;
-  position: relative;
-  height: 50%;
-  width: 100%;
-}
-
-.aventureTitle {
-  position: relative;
-  top: 35%;
-  margin-right: 15rem;
-  z-index: 3;
-
-}
-.aventureTitle h2 {
-  font-size: 64px;
-  font-weight: 400;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.aventureContent {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding-left: 10rem;
-  padding-right: 10rem;
-} 
-
-.aventureImage {
-  width: 560px;
-  height: 560px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  margin-right: 10rem;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aventureImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.aventureText {
-  text-align: left;
-  width: 50%;
-  /* font-size: 18px; */
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  margin-left: 10rem;
-  font-family: "Playfair Display", serif;
-  
+  visibility: visible !important;
 }
 
 .contactSection {
@@ -898,4 +822,90 @@
   }
 }
 
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
 
+.slideContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrowBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(209, 187, 168, 0.5);
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.arrowBtn:hover {
+    background: rgba(209, 187, 168, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.arrowBtn:first-child {
+    left: 20px;
+}
+
+.arrowBtn:last-child {
+    right: 20px;
+}
+
+/* Pour rendre les flèches plus visibles sur mobile */
+@media screen and (max-width: 768px) {
+    .arrowBtn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+.videoPlayer, .videoFrame, .reactPlayer {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.videoContainer {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .videoContainer {
+    width: 95%;
+    padding: 1rem;
+  }
+}

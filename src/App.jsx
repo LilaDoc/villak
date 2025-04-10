@@ -19,13 +19,19 @@ function App() {
             < Header />
           </div>
 
-          <Hero />
+          <Hero  id="hero"/>
         </section>
         <Video/>
-       <About/>
-       <Location/>
+       <div id="about">
+         <About />
+       </div>
+       <div id="location">
+         <Location />
+       </div>
         {/* <Discover/> */}
-        <Contact/>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
     </>
   )

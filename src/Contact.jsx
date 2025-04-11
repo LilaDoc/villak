@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <section className={styles.contactSection} id="contact">
 <div className={styles.contactContainer}>
-  <h2>CONTACTEZ-NOUS</h2>
+  <h2><span className='capitalize'>C</span>ONTACTEZ-NOUS</h2>
   <p>
     Nous sommes à votre écoute pour toute question ou demande. Contactez-nous par mail à <a href="mailto:contact@villedeskribean.com">contact@villedeskribean.com</a>
   </p>

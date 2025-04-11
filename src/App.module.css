@@ -216,10 +216,12 @@
 }
 
 .aboutCarousel {
-  width: 620px;
-  height: 620px;
-  border: 1px solid black;
+  width: 750px;
+  height: 500px;
   margin: 2rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .aboutTextContainer {
@@ -377,6 +379,8 @@
   color: rgb(0, 0, 0);
   padding-left: 1rem;
 }
+
+
 
 .locationSection {
   display: flex;
@@ -631,6 +635,9 @@
 }
 /* Media Queries pour le responsive */
 @media screen and (max-width: 1024px) {
+  .heroText {
+    opacity: 0;
+  }
   .decouverteSection {
     height: auto;
     min-height: unset;
@@ -748,6 +755,7 @@
   .hero h1 {
     font-size: 40px;
   }
+ 
 
   .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
     font-size: 32px;
@@ -866,6 +874,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .arrowBtn:hover {

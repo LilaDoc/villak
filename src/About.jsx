@@ -13,55 +13,57 @@ import lavelinge from './assets/lavelinge.svg'
 import tv from './assets/tv.svg'
 import cafe from './assets/cafe.svg'
 import car from './assets/car.svg'
-
+import leaf from './assets/hayley-maxwell-Z-yBoorc158-unsplash.jpg'
 
 export default function About() {
   return (
     <>
+
     <section className={styles.aboutSection}>
-<div className={styles.aboutContainer}>
-  <div className={styles.aboutCarousel}>
-      <Caroussel />
-  </div>
-  <div className={styles.aboutTextContainer}>
-    <div className={styles.aboutText}>
-      
-      <h3 className={styles.playfairDisplay}><span className="capitalize">B</span>ienvenue à la Villa des K'ribean,</h3><p className={styles.playfairDisplay}>une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/>
-      Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. <br/>
-      Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
-      </p>
-    </div>
-    <div className={styles.cardText}>
-      <div className={styles.cardContainer}>
-        <div className={styles.card}>
-          <div className={styles.cardImage}>
-            <img src={person} alt="About" className={styles.icon} />
-          </div>
-          <p>6</p>
-          <p>VOYAGEURS</p>
+
+      <div className={styles.aboutContainer}>
+        <div className={styles.aboutCarousel}>
+            <Caroussel />
         </div>
-        <div className={styles.card}>
-          <div className={styles.cardImage}>
-            <img src={bed} alt="About" className={styles.icon} />
+        <div className={styles.aboutTextContainer}>
+          <div className={styles.aboutText}>
+            
+            <h3 className={styles.playfairDisplay}><span className="capitalize">B</span>ienvenue à la Villa des K'ribean,</h3><p className={styles.playfairDisplay}>une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/>
+            Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. <br/>
+            Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
+            </p>
           </div>
-          <p>2</p>
-          <p>CHAMBRES</p> 
-        </div>
-        <div className={styles.card}>
-          <div className={styles.cardImage}>
-            <img src={shower} alt="About" className={styles.icon} />
+          <div className={styles.cardText}>
+            <div className={styles.cardContainer}>
+              <div className={styles.card}>
+                <div className={styles.cardImage}>
+                  <img src={person} alt="About" className={styles.icon} />
+                </div>
+                <p>6</p>
+                <p>VOYAGEURS</p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.cardImage}>
+                  <img src={bed} alt="About" className={styles.icon} />
+                </div>
+                <p>2</p>
+                <p>CHAMBRES</p> 
+              </div>
+              <div className={styles.card}>
+                <div className={styles.cardImage}>
+                  <img src={shower} alt="About" className={styles.icon} />
+                </div>
+                <p>1</p>
+                <p>SDB</p>
+              </div>
+            </div>
           </div>
-          <p>1</p>
-          <p>SDB</p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div className={styles.aboutServicesTitle}>
-    <h2><span className="capitalize">A</span> VOTRE DISPOSITION</h2>
-</div>
-<div className={styles.aboutServices}>
+      <div className={styles.aboutServicesTitle}>
+          <h2><span className="capitalize">A</span> VOTRE DISPOSITION</h2>
+      </div>
+      <div className={styles.aboutServices}>
 
   <div className={styles.aboutServicesContent}>
       <div className={styles.aboutServicesList}>

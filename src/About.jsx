@@ -13,8 +13,10 @@ import lavelinge from './assets/lavelinge.svg'
 import tv from './assets/tv.svg'
 import cafe from './assets/cafe.svg'
 import car from './assets/car.svg'
-import leaf from './assets/hayley-maxwell-Z-yBoorc158-unsplash.jpg'
-
+import beach from './assets/beach.jpg'
+import decouverte from './assets/decouverte.jpg'
+import aventure from './assets/aventure.jpg'
+import AroundCard from './AroundCard'
 export default function About() {
   return (
     <>
@@ -60,93 +62,105 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className={styles.aboutServicesTitle}>
-          <h2><span className="capitalize">A</span> VOTRE DISPOSITION</h2>
+      <div className={styles.aboutServicesContainer}>
+        <div className={styles.aboutServicesTitle}>
+            <h3 className={styles.playfairDisplay}><span className="capitalize">A</span> votre disposition</h3>
+        </div>
+        <div className={styles.aboutServices}>
+          <div className={styles.aboutServicesContent}>
+              <div className={styles.aboutServicesList}>
+                <div className={styles.aboutServicesItem }>
+                    <div className={styles.aboutServicesItemImage}>
+                    <img src={wifi} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    WIFI
+                  </p>
+                </div>
+                <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={clim} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    CLIMATISATION
+                  </p>
+                </div>
+                <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={water} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    CITERNE D'EAU
+                  </p>
+                </div>
+              </div>
+              <div className={styles.aboutServicesList}>
+              <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={car} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    PARKING
+                  </p>
+                </div>
+                <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={yard} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    JARDIN & TERRASSSE
+                  </p>
+                </div>
+                <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={bebechambre} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    LIT BÉbÉ
+                  </p>
+                </div>
+              </div>
+              <div className={styles.aboutServicesList}>
+              <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={lavelinge} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    LAVE-LINGE
+                  </p>
+                </div>
+                <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={tv} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    TV
+                  </p>
+                </div>
+                <div className={styles.aboutServicesItem}>
+                  <div className={styles.aboutServicesItemImage}>
+                    <img src={cafe} alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    MACHINE À CAFÉ
+                  </p>
+                </div>
+              </div>
+          </div>
+          </div>
       </div>
-      <div className={styles.aboutServices}>
-
-  <div className={styles.aboutServicesContent}>
-      <div className={styles.aboutServicesList}>
-        <div className={styles.aboutServicesItem }>
-            <div className={styles.aboutServicesItemImage}>
-            <img src={wifi} alt="About" height={30} width={30} />
+      <div className={styles.around}>
+        <div className={styles.aroundContainer}>
+          <div className={styles.aroundTitle}>
+            <h3 className={styles.playfairDisplay}><span className="capitalize">V</span>isitez la Guadeloupe</h3>
           </div>
-          <p>
-            WIFI
-          </p>
-        </div>
-        <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={clim} alt="About" height={30} width={30} />
+          <div className={styles.aroundCards}>
+            <AroundCard image={beach} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="100m" title="Plage des Alizées"/>
+            <AroundCard image={decouverte} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="100m" title="Distillerie Damoiseau"/>
+            <AroundCard image={aventure} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="100m" title="Cascade des écrevisses"/>
           </div>
-          <p>
-            CLIMATISATION
-          </p>
-        </div>
-        <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={water} alt="About" height={30} width={30} />
-          </div>
-          <p>
-            CITERNE D'EAU
-          </p>
         </div>
       </div>
-      <div className={styles.aboutServicesList}>
-      <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={car} alt="About" height={30} width={30} />
-          </div>
-          <p>
-            PARKING
-          </p>
-        </div>
-        <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={yard} alt="About" height={30} width={30} />
-          </div>
-          <p>
-            JARDIN & TERRASSSE
-          </p>
-        </div>
-        <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={bebechambre} alt="About" height={30} width={30} />
-          </div>
-          <p>
-            LIT BÉbÉ
-          </p>
-        </div>
-      </div>
-      <div className={styles.aboutServicesList}>
-      <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={lavelinge} alt="About" height={30} width={30} />
-          </div>
-          <p>
-            LAVE-LINGE
-          </p>
-        </div>
-        <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={tv} alt="About" height={30} width={30} />
-          </div>
-          <p>
-            TV
-          </p>
-        </div>
-        <div className={styles.aboutServicesItem}>
-          <div className={styles.aboutServicesItemImage}>
-            <img src={cafe} alt="About" height={30} width={30} />
-          </div>
-          <p>
-            MACHINE À CAFÉ
-          </p>
-        </div>
-      </div>
-  </div>
-  
-</div>
     </section>
 
     </>

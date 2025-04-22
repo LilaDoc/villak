@@ -1,939 +1,1063 @@
-.playfairDisplay {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.openSans {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  font-family: "Open Sans", sans-serif;
-}
-.landing {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-
-}
-.logo {
-  font-size: 24px;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-  text-align: left;
-  margin-left: 1rem;
-}
-
-.navContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 80vh;
-  z-index: 0;
-  border-bottom: solid 5px rgb(0, 0, 0, 0.03);
-
-}
-
-.heroImage {
-  scale: 1.3;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-}
-
-.hero h1 {
-  position: absolute;
-  top: 90%;
-  left: 70%;
-  width: 150%;
-  height: 50%;
-  font-size: 64px;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 70% 70% 0 0;
-  padding: 5rem;
-  margin-bottom: 10rem;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-
-}
-
-.heroTitle {
-  transition: opacity 1.5s ease-in-out;  /* Transition uniquement sur l'opacité */
-}
-
-.showApparition {
-  opacity: 1;
-}
-
-.hiddenApparition {
-  opacity: 0;
-}
-
-.heroButton {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-  cursor: pointer;
- 
-}
-
-.heroButton:hover {
-  transform: translate(-50%, 25px);
-  transition: transform 0.3s ease;
-}
-
-.heroButtonIcon {
-  width: 100px;
-  height: 100px;
-  opacity: 0.8;
-  transition: all 0.3s ease;
-  filter: brightness(0) invert(1);
-}
-
-.heroButtonIcon:hover {
-  opacity: 1;
-  transform: translateY(15px);
-}
-
-.heroText h2{
-  position: absolute;
-  top: 100%;
-  left: 70%;
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  width: 32%;
-  font-weight: 400;
-
-}
-@media screen and (max-width: 1024px) {
-  
-  .hero h1 {
-    font-size: 48px;
-    left: 50%;
+  .playfairDisplay {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
-  .heroText {
-    font-size: 16px;
-    left: 50%;
+  .openSans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+  }
+  .landing {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 100;
+
   }
-}
-  @media screen and (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    z-index: 0;
+    border-bottom: solid 5px rgb(0, 0, 0, 0.03);
+
+  }
+
+  .heroImage {
+    scale: 1.3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .hero h1 {
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    width: 150%;
+    height: 50%;
+    font-size: 64px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 70% 70% 0 0;
+    padding: 5rem;
+    margin-bottom: 10rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+  }
+
+  .heroTitle {
+    transition: opacity 1.5s ease-in-out;  /* Transition uniquement sur l'opacité */
+  }
+
+  .showApparition {
+    opacity: 1;
+  }
+
+  .hiddenApparition {
+    opacity: 0;
+  }
+
+  .heroButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  
+  }
+
+  .heroButton:hover {
+    transform: translate(-50%, 25px);
+    transition: transform 0.3s ease;
+  }
+
+  .heroButtonIcon {
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    filter: brightness(0) invert(1);
+  }
+
+  .heroButtonIcon:hover {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+
+  .heroText h2{
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    width: 32%;
+    font-weight: 400;
+
+  }
+  @media screen and (max-width: 1024px) {
+    
     .hero h1 {
-      font-size: 40px;
+      font-size: 48px;
       left: 50%;
     }
     .heroText {
       font-size: 16px;
-      left: 20%;
+      left: 50%;
+      width: 100%;
     }
   }
+    @media screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+        left: 50%;
+      }
+      .heroText {
+        font-size: 16px;
+        left: 20%;
+      }
+    }
 
-.videoSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100vw;
-  height: auto;
-  padding-top: 3rem;
-  min-height: 80vh;
-}
-
-.leafContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 30%;
-  z-index: 1;
-}
-.leafContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.videoSection {
-  padding: 0;
-  width: 100%;
-  height: 900px;
-}
-
-.videoSection h2 {
-  font-size: 32px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-.videoSection p {
-  font-size: 18px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-
-
-.aboutSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
-  height: auto;
-}
-
-.aboutContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(104, 102, 99, 0.116);
-  width: 100%;
-  height: 100%;
-  margin: 5rem;
-
-}
-
-.aboutCarousel {
-  width: 750px;
-  height: 500px;
-  margin: 2rem;
-  margin-left: 2rem;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.aboutTextContainer {
-
-
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 2rem;
-  width: 50%;
-}
-
-.aboutText {
-
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  width: 100%;
-  height: auto;
-  padding: 2rem;
-  font-size: 18px;
-}
-
-.aboutText h3{
-  font-size: 32px;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-  text-align: left;
-  margin: 0;
-}
-
-.aboutText p {
-  margin: 0;
-  padding: 0;
-}
-
-.icon {
-  width: 72px;
-  height: 72px;
-}
-
-.cardContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  height: auto;
-  padding: 2rem;
-  padding-bottom: 5rem;
-}
-
-.card p {
-  font-size: 18px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.cardText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  padding-bottom: 5rem;
-}
-
-.aboutServices {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.aboutServicesTitle {
-  display: flex;  
-  flex-direction: row;
-  align-items: start;
-  justify-content: start;
-  width: 100%;
-  margin-left: 2rem;
-
-  color: rgb(0, 0, 0);
-  text-align: left;
-  padding-left: 5rem;
-  margin-bottom: 2rem;
-
-}
-.aboutServicesTitle h2 {
-  font-size: 72px;
-  font-weight: 400;
-}
-.aboutServicesContent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-.aboutServicesList {
-  display: flex;
-  flex-direction: column;
-  align-items: start;  
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-
-  border-left: 1px solid black;
-  padding: 5rem;
-}
-
-.aboutServicesList:first-child {
-  border-left: none;
-}
-
-.aboutServicesItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: auto;
-  padding-left: 1rem;
-}
-
-.aboutServicesItemImage {
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
-
-  height: 100%;
-}
-
-.aboutServicesItem p {
-  font-size: 20px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  padding-left: 1rem;
-}
-
-
-
-.locationSection {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  width: 100vw;
-  height: 28vh;
-  margin-top: 2rem;
-}
-.locationSection img:hover{
-  scale: 1.5;
-  transition: all 0.3s ease;
-}
-.locationContainer {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.locationContainer img {
-  object-fit: cover;
-  object-position: center 20%;
-  width: 120%;
-  
-}
-
-.decouverteSection {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background-color: rgba(209, 187, 168, 1);
-  position: relative;
-  gap: 5rem;
-}
-
-.decouverteContainer,
-.aventureSection {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 50vh;
-  overflow: visible;
-  margin-bottom: 5rem;
-}
-
-.decouverteTitle,
-.aventureTitle {
-  position: relative;
-  width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-  padding-left: 10rem;
-  z-index: 3;
-  visibility: visible;
-  opacity: 1;
-}
-
-.decouverteTitle h2,
-.aventureTitle h2 {
-  font-size: 72px;
-  font-weight: 400;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0;
-}
-
-.decouverteContent,
-.aventureContent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 33vh;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-}
-
-.decouverteImage,
-.aventureImage {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.decouverteImage img,
-.aventureImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-}
-
-.decouverteText,
-.aventureText {
-  width: 50%;
-  height: auto;
-  font-family: "Playfair Display", serif;
-  margin-right: 10rem;
-  text-align: right;
-  position: relative;
-  z-index: 2;
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 1.5s ease-in-out;
-  visibility: visible;
-}
-
-.show {
-  opacity: 1;
-  transform: translateX(0);
-  transition: all 1.5s ease-in-out;
-  visibility: visible;
-}
-.showAdventure {
-  opacity: 1;
-  transform: translateX(0);
-  transition: all 1.5s ease-in-out;
-  visibility: visible !important;
-}
-.hiddenAdventure {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: all 1.5s ease-in-out;
-  visibility: visible !important;
-}
-
-.contactSection {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  width: 100vw;
-  height: 50vh;
-  background-color:rgba(209, 187, 168, 0.47);
-  position: relative;
-  gap: 5rem;
-}
-
-.contactContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  width: 100%;
-  height: 100%;
-  padding-left: 10rem;
-  padding-top: 5rem;
-}
-
-.contactContainer h2 {
-  font-size: 72px;
-  font-weight: 400;
-
-  text-align: left;
-}
-.contactContainer p {
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  text-align: left;
-}
-
-.contactContainer a {
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  font-size: 24px;
-}
-@media screen and (max-width: 720px) {
-  .contactContainer {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .contactContainer h2 {
-    font-size: 64px;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .contactContainer p {
-    font-size: 16px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1598px) {
-  .decouverteImage, .aventureImage {
-    width: 200px;
-    height: 200px;
-  }
-
-  .decouverteText, .aventureText {
-    font-size: 16px;
-  }
-
-  .decouverteTitle, .aventureTitle {
-    padding-top: 4rem;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .decouverteTitle h2, .aventureTitle h2 {
-    font-size: 48px;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 1260px) {
-  .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
-    font-size: 40px;
-  }
-
-  .decouverteContent, .aventureContent {
+  .videoSection {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .decouverteImage, .aventureImage {
-    margin: 2rem 0;
-  }
-
-  .decouverteText, .aventureText {
-    width: 100%;
-    margin: 2rem 0;
-    text-align: center;
-  }
-
-  .decouverteTitle, .aventureTitle {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-/* Media Queries pour le responsive */
-@media screen and (max-width: 1024px) {
-  .heroText {
-    opacity: 0;
-  }
-  .decouverteSection {
+    justify-content: flex-start;
+    width: 100vw;
     height: auto;
-    min-height: unset;
-    padding: 2rem 0;
-    gap: 2rem;
+    padding-top: 3rem;
+    min-height: 80vh;
   }
 
-  .decouverteContainer, .aventureSection {
-    height: auto;
+  .leafContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    z-index: 1;
+  }
+  .leafContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .videoSection {
+    padding: 0;
+    width: 100%;
+    height: 900px;
+  }
+
+  .videoSection h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .videoSection p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
     margin-bottom: 2rem;
-    padding: 1rem 0;
   }
 
-  .decouverteContent, .aventureContent {
-    padding: 1rem;
+
+
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
     height: auto;
-    gap: 1rem;
-  }
-
-  .decouverteTitle, .aventureTitle {
-    position: static;
-    margin: 1rem 0;
-    top: unset;
-  }
-
-  .decouverteText, .aventureText {
-    margin: 1rem;
-    width: 80%;
-  }
-
-  h1 {
-    font-size: 48px;
+    background-color: rgba(104, 102, 99, 0.116);
   }
 
   .aboutContainer {
-    flex-direction: column;
-    padding: 2rem;
-  }
-
-  .aboutCarousel, .aboutTextContainer {
-    width: 100%;
-    max-width: 620px;
-    margin: 1rem;
-  }
-
-  .aboutText {
-    padding: 2rem;
-  }
-
-  .aboutServicesTitle h2 {
-    font-size: 24px;
-  }
-
-  .aboutServicesContent {
-    flex-direction: column;
-  }
-
-  .aboutServicesList {
-    border-left: none;
-    border-top: 1px solid black;
-    padding: 2rem;
-  }
-
-  .aboutServicesList:first-child {
-    border-top: none;
-  }
-
-  .aboutServicesItem {
-    font-size: 16px;
-  }
-
-}
-@media screen and (max-width: 840px) {
-  .cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    /* flex-wrap: wrap; */
-    gap: 1rem;
+    height: 100%;
+    margin: 5rem;
+
   }
-  
+
+  .aboutCarousel {
+    width: 750px;
+    height: 500px;
+    margin: 2rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
   .aboutTextContainer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin: 1rem;
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-  }
-  
-  .aboutText {
-    margin-top: 0;
-    height: auto;
-  }
-  
-  .card {
-    width: 100%;
-    height: auto;
-    padding: 1rem 0;
-  }
-
-  .cardText {
-    padding-bottom: 2rem;
-    height: auto;
-    width: 100%;
-  }
-
-  .aboutText {
-    padding: 2rem;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero h1 {
-    font-size: 40px;
-  }
- 
-
-  .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
-    font-size: 32px;
-  }
-
-  .decouverteContent, .aventureContent {
+    margin: 2rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    width: 50%;
   }
 
-  .decouverteImage, .aventureImage {
-    margin: 2rem 0;
-  }
+  .aboutText {
 
-  .decouverteText, .aventureText {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     width: 100%;
-    margin: 2rem 0;
-    text-align: center;
+    height: auto;
+    padding: 2rem;
+    font-size: 18px;
   }
 
-  .decouverteTitle, .aventureTitle {
+ h3{
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: left;
     margin: 0;
-    width: 100%;
-    text-align: center;
   }
 
-  .contactContainer {
-    padding: 2rem;
-  }
-
-  .contactContainer p {
-    font-size: 20px;
+  .aboutText p {
+    margin: 0;
+    padding: 0;
   }
 
   .icon {
-    width: 59px;
-    height: 59px;
+    width: 72px;
+    height: 72px;
   }
-  .card p {
-    font-size: 14px;
+
+  .cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
   }
+
   .card {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
-    font-size: 28px;
-  }
-  .aboutServicesTitle h2 {
-    font-size: 24px;
-  }
-  /* .cardContainer {
+    display: flex;
     flex-direction: column;
-  } */
-
-  .card {
-    padding: 1rem;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    padding-bottom: 0rem;
   }
 
-  .decouverteImage, .aventureImage {
-    width: 250px;
-    height: 250px;
+  .card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
-}
 
-.carousel {
+  .cardText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0rem;
+  }
+
+  .aboutServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutServicesContainer {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+  }
+  .aboutServicesTitle {
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    display: flex;  
+    flex: 1;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    margin-left: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+  }
+  /* .aboutServicesTitle h3 {
+    font-size: 64px;
+    font-weight: 400;
+  } */
+  .aboutServicesContent {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-}
+    margin-top: 4rem;
+  }
 
-.slideContainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
 
-.slideWrapper {
+
+  .aboutServicesList {
     display: flex;
+    flex-direction: column;
+    align-items: start;  
+    justify-content: center;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
-}
+    border-left: 1px solid black;
+    padding: 5rem;
+  }
 
-.slide {
-    min-width: 100%;
+  .aboutServicesList:first-child {
+    border-left: none;
+  }
+
+  .aboutServicesItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    padding-left: 1rem;
+  }
+
+  .aboutServicesItemImage {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    height: 100%;
+  }
+
+  .aboutServicesItem p {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    padding-left: 1rem;
+  }
+
+  .aroundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    padding-top: 4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-bottom: 8rem;
+    position: relative;
+  }
+
+  .aroundTitle {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    flex: 1;
+    padding: 0rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: 1rem;
+  } 
+
+  .aroundCardTitle h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .aroundCards {
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-top: 12rem;
+  }
+  .aroundCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .aroundImage {
+    width: 240px !important;
+    height: 240px !important;
+    flex: 0 0 240px;  
+    border-radius: 5px;
+    background-color: black;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  .aroundImage img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.arrowBtn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(209, 187, 168, 0.5);
-    border: none;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.arrowBtn:hover {
-    background: rgba(209, 187, 168, 0.8);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.arrowBtn:first-child {
-    left: 20px;
-}
-
-.arrowBtn:last-child {
-    right: 20px;
-}
-
-/* Pour rendre les flèches plus visibles sur mobile */
-@media screen and (max-width: 768px) {
-    .arrowBtn {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-
-.videoPlayer, .videoFrame, .reactPlayer {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.videoContainer {
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .videoContainer {
-    width: 95%;
-    padding: 1rem;
+    top: 0;
+    left: 0;
   }
-}
+
+  .aroundText {
+    width: 80%;
+    padding: 2rem;
+  }
+  .aroundDistance {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .locationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100vw;
+    height: 28vh;
+    margin-top: 2rem;
+  }
+  .locationSection img:hover{
+    scale: 1.5;
+    transition: all 0.3s ease;
+  }
+  .locationContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .locationContainer img {
+    object-fit: cover;
+    object-position: center 20%;
+    width: 120%;
+    
+  }
+
+  .decouverteSection {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(209, 187, 168, 1);
+    position: relative;
+    gap: 5rem;
+  }
+
+  .decouverteContainer,
+  .aventureSection {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    overflow: visible;
+    margin-bottom: 5rem;
+  }
+
+  .decouverteTitle,
+  .aventureTitle {
+    position: relative;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 10rem;
+    z-index: 3;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .decouverteTitle h2,
+  .aventureTitle h2 {
+    font-size: 72px;
+    font-weight: 400;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+  }
+
+  .decouverteContent,
+  .aventureContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 33vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+
+  .decouverteImage,
+  .aventureImage {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .decouverteImage img,
+  .aventureImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .decouverteText,
+  .aventureText {
+    width: 50%;
+    height: auto;
+    font-family: "Playfair Display", serif;
+    margin-right: 10rem;
+    text-align: right;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.5s ease-in-out;
+    visibility: visible;
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.5s ease-in-out;
+    visibility: visible;
+  }
+  .showAdventure {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.5s ease-in-out;
+    visibility: visible !important;
+  }
+  .hiddenAdventure {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1.5s ease-in-out;
+    visibility: visible !important;
+  }
+
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100vw;
+    height: 50vh;
+    background-color:rgba(209, 187, 168, 0.47);
+    position: relative;
+    gap: 5rem;
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    padding-left: 10rem;
+    padding-top: 5rem;
+  }
+
+  .contactContainer h2 {
+    font-size: 72px;
+    font-weight: 400;
+
+    text-align: left;
+  }
+  .contactContainer p {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: left;
+  }
+
+  .contactContainer a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+  }
+
+  .footerLeftContainer, .footerRightContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+  }
+
+
+  @media screen and (max-width: 720px) {
+    .contactContainer {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .contactContainer h2 {
+      font-size: 64px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .contactContainer p {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 1598px) {
+    .decouverteImage, .aventureImage {
+      width: 200px;
+      height: 200px;
+    }
+
+    .decouverteText, .aventureText {
+      font-size: 16px;
+    }
+
+    .decouverteTitle, .aventureTitle {
+      padding-top: 4rem;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .decouverteTitle h2, .aventureTitle h2 {
+      font-size: 48px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1260px) {
+    .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
+      font-size: 40px;
+    }
+
+    .decouverteContent, .aventureContent {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .decouverteImage, .aventureImage {
+      margin: 2rem 0;
+    }
+
+    .decouverteText, .aventureText {
+      width: 100%;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .decouverteTitle, .aventureTitle {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /* Media Queries pour le responsive */
+  @media screen and (max-width: 1024px) {
+    .heroText {
+      opacity: 0;
+    }
+    .decouverteSection {
+      height: auto;
+      min-height: unset;
+      padding: 2rem 0;
+      gap: 2rem;
+    }
+
+    .decouverteContainer, .aventureSection {
+      height: auto;
+      margin-bottom: 2rem;
+      padding: 1rem 0;
+    }
+
+    .decouverteContent, .aventureContent {
+      padding: 1rem;
+      height: auto;
+      gap: 1rem;
+    }
+
+    .decouverteTitle, .aventureTitle {
+      position: static;
+      margin: 1rem 0;
+      top: unset;
+    }
+
+    .decouverteText, .aventureText {
+      margin: 1rem;
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    .aboutContainer {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .aboutCarousel, .aboutTextContainer {
+      width: 100%;
+      max-width: 620px;
+      margin: 1rem;
+    }
+
+    .aboutText {
+      padding: 2rem;
+    }
+
+    .aboutServicesTitle h2 {
+      font-size: 24px;
+    }
+
+    .aboutServicesContent {
+      flex-direction: column;
+    }
+
+    .aboutServicesList {
+      border-left: none;
+      border-top: 1px solid black;
+      padding: 2rem;
+    }
+
+    .aboutServicesList:first-child {
+      border-top: none;
+    }
+
+    .aboutServicesItem {
+      font-size: 16px;
+    }
+
+  }
+  @media screen and (max-width: 840px) {
+    .cardContainer {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      /* flex-wrap: wrap; */
+      gap: 1rem;
+    }
+    
+    .aboutTextContainer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin: 1rem;
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+    }
+    
+    .aboutText {
+      margin-top: 0;
+      height: auto;
+    }
+    
+    .card {
+      width: 100%;
+      height: auto;
+      padding: 1rem 0;
+    }
+
+    .cardText {
+      padding-bottom: 2rem;
+      height: auto;
+      width: 100%;
+    }
+
+    .aboutText {
+      padding: 2rem;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 40px;
+    }
+  
+
+    .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
+      font-size: 32px;
+    }
+
+    .decouverteContent, .aventureContent {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .decouverteImage, .aventureImage {
+      margin: 2rem 0;
+    }
+
+    .decouverteText, .aventureText {
+      width: 100%;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .decouverteTitle, .aventureTitle {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contactContainer {
+      padding: 2rem;
+    }
+
+    .contactContainer p {
+      font-size: 20px;
+    }
+
+    .icon {
+      width: 59px;
+      height: 59px;
+    }
+    .card p {
+      font-size: 14px;
+    }
+    .card {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero h1 {
+      font-size: 32px;
+    }
+
+    .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
+      font-size: 28px;
+    }
+    .aboutServicesTitle h2 {
+      font-size: 24px;
+    }
+    /* .cardContainer {
+      flex-direction: column;
+    } */
+
+    .card {
+      padding: 1rem;
+    }
+
+    .decouverteImage, .aventureImage {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .carousel {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+  }
+
+  .slideContainer {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+
+  .slideWrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+      min-width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .arrowBtn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(209, 187, 168, 0.5);
+      border: none;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 10;
+  }
+
+  .arrowBtn:hover {
+      background: rgba(209, 187, 168, 0.8);
+      transform: translateY(-50%) scale(1.1);
+  }
+
+  .arrowBtn:first-child {
+      left: 20px;
+  }
+
+  .arrowBtn:last-child {
+      right: 20px;
+  }
+
+  /* Pour rendre les flèches plus visibles sur mobile */
+  @media screen and (max-width: 768px) {
+      .arrowBtn {
+          width: 35px;
+          height: 35px;
+      }
+  }
+
+
+  .videoPlayer, .videoFrame, .reactPlayer {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .videoContainer {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .videoContainer {
+      width: 95%;
+      padding: 1rem;
+    }
+  }

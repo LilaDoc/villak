@@ -45,6 +45,11 @@ a {
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 840px){
+  .capitalize {
+    font-size: 4rem;
+  }
+}
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

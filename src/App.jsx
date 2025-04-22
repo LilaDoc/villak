@@ -6,6 +6,7 @@ import About from './About';
 import Location from './Location';
 import Discover from './Discover';
 import Contact from './Contact';
+import CallToAction from './CallToAction';
 // import Video from './components/Video'
 
 function App() {
@@ -18,17 +19,16 @@ function App() {
           <div className={styles.header}>
             < Header />
           </div>
-
           <Hero  id="hero"/>
         </section>
-        <Video/>
-       <div id="about">
-         <About />
-       </div>
-       <div id="location">
-         <Location />
-       </div>
-        {/* <Discover/> */}
+        <CallToAction/>
+        <div id="about">
+          <About />
+        </div>
+        <div id="location">
+          <Location />
+        </div>
+          {/* <Discover/> */}
         <div id="contact">
           <Contact />
         </div>

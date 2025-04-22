@@ -4,7 +4,7 @@ import heroImage from './assets/palmier.jpg';
 import Arrow from './Down-arrow';
 import styles from './App.module.css'
 import { useState, useEffect, useRef } from 'react'
-
+import Video from './Video'
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -33,12 +33,11 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
-      <img 
-        src={heroImage} 
-        alt="Hero" 
-        className={styles.heroImage}
-        onLoad={() => setImageLoaded(true)}
-      />
+      <div         
+      className={styles.heroImage}
+        onLoad={() => setImageLoaded(true)}>
+      <Video/>
+      </div>
       <h1 
         ref={heroTitleRef}
         className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}

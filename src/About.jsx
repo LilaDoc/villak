@@ -22,14 +22,12 @@ export default function About() {
     <>
 
     <section className={styles.aboutSection}>
-
       <div className={styles.aboutContainer}>
         <div className={styles.aboutCarousel}>
             <Caroussel />
         </div>
         <div className={styles.aboutTextContainer}>
           <div className={styles.aboutText}>
-            
             <h3 className={styles.playfairDisplay}><span className="capitalize">B</span>ienvenue à la Villa des K'ribean,</h3><p className={styles.playfairDisplay}>une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/>
             Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. <br/>
             Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
@@ -60,12 +58,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={styles.aboutServicesContainer}>
-        <div className={styles.aboutServicesTitle}>
-            <h3 className={styles.playfairDisplay}><span className="capitalize">A</span> votre disposition</h3>
-        </div>
+
         <div className={styles.aboutServices}>
           <div className={styles.aboutServicesContent}>
               <div className={styles.aboutServicesList}>
@@ -148,6 +141,13 @@ export default function About() {
               </div>
           </div>
           </div>
+        </div>
+      </div>
+      <div className={styles.aboutServicesContainer}>
+        {/* <div className={styles.aboutServicesTitle}>
+            <h3 className={styles.playfairDisplay}><span className="capitalize">A</span> votre disposition</h3>
+        </div> */}
+
       </div>
       <div className={styles.around}>
         <div className={styles.aroundContainer}>
@@ -155,9 +155,9 @@ export default function About() {
             <h3 className={styles.playfairDisplay}><span className="capitalize">V</span>isitez la Guadeloupe</h3>
           </div>
           <div className={styles.aroundCards}>
-            <AroundCard image={beach} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="100m" title="Plage des Alizées"/>
-            <AroundCard image={decouverte} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="100m" title="Distillerie Damoiseau"/>
-            <AroundCard image={aventure} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="100m" title="Cascade des écrevisses"/>
+            <AroundCard link="https://fr.guadeloupe-tourisme.com/100/plage-des-alizes-le-moule/" image={beach} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="2,6km" title="Plage des Alizées"/>
+            <AroundCard link="https://rhum-damoiseau.com/" image={decouverte} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="3km" title="Distillerie Damoiseau"/>
+            <AroundCard link="https://www.tripadvisor.fr/Attraction_Review-g147305-d148906-Reviews-Cascade_aux_Ecrevisses-Parc_National_Basse_Terre_Island_Guadeloupe.html" image={aventure} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="50km" title="Cascade des écrevisses"/>
           </div>
         </div>
       </div>

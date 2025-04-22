@@ -4,14 +4,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     padding: 2rem 0;
+    overflow: hidden;
   }
   
   .videoContainer {
     width: 90%;
     max-width: 1200px;
-    height: 0;
+    height: 80%;
     padding-bottom: 56.25%;
     position: relative;
     margin: 0 auto;

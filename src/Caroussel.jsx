@@ -36,43 +36,49 @@ function Caroussel() {
     }
 
     return (
-        <div className={styles.carousel}>
-            <button className={styles.arrowBtn} onClick={prevSlide}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 18L9 12L15 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-            </button>
-            
-            <div className={styles.slideContainer}>
-                <div 
-                    className={styles.slideWrapper} 
-                    style={{ 
-                        transform: `translateX(-${currentIndex * 100}%)` 
-                    }}
-                >
-                    {images.map((image, index) => (
-                        <img 
-                            key={index}
-                            src={image} 
-                            alt={`Slide ${index + 1}`}
-                            className={styles.slide}
-                        />
-                    ))}
+        // <section className={styles.carouselSection}>
+            <div className={styles.carousel}>
+                {/* <button className={styles.arrowBtn} onClick={prevSlide}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </button> */}
+                
+                <div className={styles.slideContainer}>
+                    <div 
+                        className={styles.slideWrapper} 
+                        style={{ 
+                            transform: `translateX(-${currentIndex * 100}%)` 
+                        }}
+                    >
+                        {images.map((image, index) => (
+                            <img 
+                                key={index}
+                                src={image} 
+                                alt={`Slide ${index + 1}`}
+                                className={styles.slide}
+                            />
+                        ))}
 
-            </div>
-            </div>
+                    </div>
+                </div>
                 <div className={styles.slideMarker}>
-                {images.map((image,index) => (
-                    <div key={index} className={styles.slideMarkerItem}></div>
-                ))}
-            </div>
+                    {images.map((image, index) => (
+                        <div 
+                            key={index} 
+                            className={`${styles.slideMarkerItem} ${index === currentIndex ? styles.active : ''}`}
+                            onClick={() => setCurrentIndex(index)}
+                        ></div>
+                    ))}
+                </div>
 
-            <button className={styles.arrowBtn} onClick={nextSlide}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-            </button>
-        </div>
+                {/* <button className={styles.arrowBtn} onClick={nextSlide}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </button> */}
+            </div>
+        // </section>
     )
 }
 

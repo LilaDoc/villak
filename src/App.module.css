@@ -10,7 +10,9 @@
     font-weight: 400;
     font-style: normal;
   }
-
+  .noDisplay {
+    display: none;
+  }
   .page {
     display: flex;
     flex-direction: column;
@@ -974,6 +976,18 @@
     width: 20px;
     height: 20px;
   }
+  .carousel {
+    height: 200px;
+  }
+  .carousel .slide {
+    height: 200px;
+  }
+  .carousel .slide img {
+    height: 200px;
+  } 
+  .noDisplay {
+    display: block;
+  }
   }
 
   @media screen and (max-width: 768px) {
@@ -1166,3 +1180,4 @@
       padding: 1rem;
     }
   }
+

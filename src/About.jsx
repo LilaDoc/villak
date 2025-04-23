@@ -17,6 +17,7 @@ import beach from './assets/beach.jpg'
 import decouverte from './assets/decouverte.jpg'
 import aventure from './assets/aventure.jpg'
 import AroundCard from './AroundCard'
+import Video from './Video'
 export default function About() {
   return (
     <>
@@ -149,6 +150,9 @@ export default function About() {
         </div> */}
 
       </div>
+
+        <Video className={styles.noDisplay}/>
+
       <div className={styles.around}>
         <div className={styles.aroundContainer}>
           <div className={styles.aroundTitle}>

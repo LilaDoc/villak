@@ -58,7 +58,13 @@ function Caroussel() {
                             className={styles.slide}
                         />
                     ))}
-                </div>
+
+            </div>
+            </div>
+                <div className={styles.slideMarker}>
+                {images.map((image,index) => (
+                    <div key={index} className={styles.slideMarkerItem}></div>
+                ))}
             </div>
 
             <button className={styles.arrowBtn} onClick={nextSlide}>

@@ -36,7 +36,7 @@ export default function Hero() {
       <div         
       className={styles.heroImage}
         onLoad={() => setImageLoaded(true)}>
-      <Video/>
+      <Video />
       </div>
       <h1 
         ref={heroTitleRef}

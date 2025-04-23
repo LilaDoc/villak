@@ -21,7 +21,7 @@ function App() {
           </div>
           <Hero  id="hero"/>
         </section>
-        <CallToAction/>
+        {/* <CallToAction/> */}
         <div id="about">
           <About />
         </div>

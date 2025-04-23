@@ -1,7 +1,7 @@
 import styles from './App.module.css'
 import ToogleButton from './ToogleButton';
 import ToogleList from './ToogleList';
-
+import ButtonReservation from './ButtonReservation';
 const Header = () => {
     return (
       <header className={styles.header}>
@@ -9,9 +9,7 @@ const Header = () => {
           <div className={styles.logo}>
             <p>VILLA K'RIBEAN</p>
           </div>
-          <div className={styles.toogleButtonContainer}>
-            <ToogleButton />
-          </div>
+              <ButtonReservation />
         </nav>
       </header>
     );

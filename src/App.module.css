@@ -45,7 +45,8 @@
     font-weight: 600;
     color: rgb(0, 0, 0);
     text-align: left;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
 
   .navContainer {
@@ -53,6 +54,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .callToAction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
   }
 
   .hero {
@@ -214,7 +223,9 @@
     border: 1px solid black;
     padding: 1rem;
     border-radius: 10px;
-    margin-top: 5rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    
   }
   .callToActionContainer h2:hover {
     background-color: rgb(0, 0, 0);
@@ -492,10 +503,10 @@
   transition: all 0.3s ease;
 }
   .aroundImage {
-    width: 240px !important;
-    height: 240px !important;
-    flex: 0 0 240px;  
-    border-radius: 5px;
+    width: 160px !important;
+    height: 160px !important;
+    flex: 0 0 160px;  
+    border-radius: 50%;
     background-color: black;
     object-fit: cover;
     overflow: hidden;

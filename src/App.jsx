@@ -28,6 +28,7 @@ function App() {
         <div id="location">
           <Location />
         </div>
+
           {/* <Discover/> */}
         <div id="contact">
           <Contact />

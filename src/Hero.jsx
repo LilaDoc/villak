@@ -5,6 +5,7 @@ import Arrow from './Down-arrow';
 import styles from './App.module.css'
 import { useState, useEffect, useRef } from 'react'
 import Video from './Video'
+
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +25,10 @@ const useElementOnScreen = (options) => {
   return [containerRef, isVisible];
 };
 
+
+
 export default function Hero() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [heroTitleRef, isHeroTitleVisible] = useElementOnScreen({
     threshold: 0.4,
@@ -32,25 +36,27 @@ export default function Hero() {
   });
 
   return (
-    <section className={styles.hero}>
-      <div         
-      className={styles.heroImage}
-        onLoad={() => setImageLoaded(true)}>
-      <Video />
-      </div>
-      <h1 
-        ref={heroTitleRef}
-        className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
-      >
-        <span className="capitalize">V</span>ILLA K'RIBEAN
-      </h1>
-      <div className={styles.heroOverlay}>
-        <div className={styles.heroText}>
-          <h2>LOCATION DE VACANCES AU MOULE</h2>
+    <section className={styles.hero} onClick={() => setIsVideoOpen(true)}>
+      <div className={styles.hero}>
+        <div         
+        className={styles.heroImage}
+          onLoad={() => setImageLoaded(true)}>
+        <Video />
         </div>
-      </div>
-      <div className={styles.heroButton}>
-        <Arrow color="#ffffff" width="100" height="100" />
+        <h1 
+          ref={heroTitleRef}
+          className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
+        >
+          <span className="capitalize">V</span>ILLA K'RIBEAN
+        </h1>
+        <div className={styles.heroOverlay}>
+          <div className={styles.heroText}>
+            <h2>LOCATION DE VACANCES AU MOULE</h2>
+          </div>
+        </div>
+        <div className={styles.heroButton}>
+          <Arrow color="#ffffff" width="100" height="100" />
+        </div>
       </div>
       {/* add menu button  */}
     </section>

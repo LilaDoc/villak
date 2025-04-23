@@ -18,6 +18,8 @@ import decouverte from './assets/decouverte.jpg'
 import aventure from './assets/aventure.jpg'
 import AroundCard from './AroundCard'
 import Video from './Video'
+import ButtonReservation from './ButtonReservation'
+import leaf from './assets/black-shadow-leaves-with-sunlight-white-backdrop.jpg'
 export default function About() {
   return (
     <>
@@ -152,6 +154,11 @@ export default function About() {
       </div>
 {/* 
         <Video className={styles.noDisplay}/> */}
+        <div className={styles.reservation}>
+          <div className={styles.reservationContent}>
+            <ButtonReservation/>
+          </div>
+        </div>
 
       <div className={styles.around}>
         <div className={styles.aroundContainer}>

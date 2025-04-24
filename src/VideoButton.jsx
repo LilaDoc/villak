@@ -8,7 +8,7 @@ const VideoButton = (props) => {
     <div >
       <button className={styles.videoButton} onClick={() => props.setVideoOpen(true)}>
         <img src={videoImage} alt="video" className={styles.videoButtonImage} />
-        <span className={styles.videoButtonText}>Voir la vidéo</span>
+        <span className={`${styles.videoButtonText} ${styles.callToActionSpan}`}>Voir la vidéo</span>
       </button>
     </div>
   );

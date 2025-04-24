@@ -13,12 +13,12 @@ const VideoScreen = (props) => {
         <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/oahxGMXj0Ls?autoplay=1&mute=1&loop=1&playlist=oahxGMXj0Ls"
+              src="https://www.youtube.com/embed/oahxGMXj0Ls?autoplay=1&controls=1&mute=0&loop=1&playlist=oahxGMXj0Ls"
               title="Villa K'ribean"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className={styles.videoFrame}
+              className={styles.videoScreenFrame}
           ></iframe>
         </div>
     </div>

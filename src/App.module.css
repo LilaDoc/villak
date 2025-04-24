@@ -75,13 +75,19 @@
 
   }
 
-  .heroImage {
+  .heroVideo {
     width: 100%;
     min-height: 70vh;
     position: relative;
     overflow: hidden;
   }
-
+  .heroImage {
+    display: none;
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+  }
   .hero h1 {
     position: absolute;
     top: 89%;
@@ -1162,6 +1168,12 @@
   } 
   .noDisplay {
     display: block;
+  }
+  .heroImage {
+    display: block;
+  }
+  .heroVideo {
+    display: none;
   }
   }
 

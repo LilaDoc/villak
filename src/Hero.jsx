@@ -36,9 +36,12 @@ export default function Hero(props) {
     <>
       {props.videoOpen && <VideoScreen videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />}
       <section className={styles.hero}>
-        <div className={styles.heroImage}
+        <div className={styles.heroVideo}
           onLoad={() => setImageLoaded(true)}>
           <Video />
+        </div>
+        <div className={styles.heroImage}>
+          <img src={heroImage} alt="hero" />
         </div>
         <h1 
           ref={heroTitleRef}

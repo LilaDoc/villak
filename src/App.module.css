@@ -163,7 +163,7 @@
       width: 100%;
     }
   }
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
       .hero h1 {
         font-size: 40px;
         left: 50%;
@@ -172,7 +172,82 @@
         font-size: 16px;
         left: 20%;
       }
-    }
+  }
+  .videoButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    margin: 1rem;
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+  }
+  .videoButtonImage {
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+    object-fit: cover;
+  }
+  .videoButtonText {
+    font-size: 18px;
+    font-weight: 400;
+    
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    margin: 1rem;
+    margin-left: 0;
+  }
+  .videoButton:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+
+  .videoScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(17, 16, 16, 0.9);
+  }
+  .videoScreenContent {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .videoScreenFrame {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+  }
+  .videoScreenClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 101;
+    cursor: pointer;  
+    margin: 1rem;
+  }
 
   .videoSection {
     display: flex;
@@ -214,18 +289,20 @@
   }
 
   .callToActionContainer h2 {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 400;
     color: rgb(0, 0, 0);
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: "Playfair Display", serif;
-    border: 1px solid black;
+    border: 0.1px solid black;
     padding: 1rem;
     border-radius: 10px;
     margin-right: 2rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.7)
+    backdrop-filter: blur(20px);
+
+    letter-spacing: 2px
   }
   .callToActionContainer h2:hover {
     background-color: rgb(0, 0, 0);
@@ -562,6 +639,7 @@
 .aroundCard:hover {
   scale: 1.05;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
   .aroundImage {
     width: 160px !important;
@@ -1247,9 +1325,8 @@
   }
 
   @media screen and (max-width: 768px) {
-    .videoContainer {
+    .videoScreenContent {
       width: 95%;
-      padding: 1rem;
     }
   }
 

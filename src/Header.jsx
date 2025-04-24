@@ -1,13 +1,13 @@
 import styles from './App.module.css'
-import ToogleButton from './ToogleButton';
-import ToogleList from './ToogleList';
 import ButtonReservation from './ButtonReservation';
-const Header = () => {
+import VideoButton from './VideoButton';
+
+const Header = (props) => {
     return (
       <header className={styles.header}>
         <nav className={styles.navContainer}>
           <div className={styles.logo}>
-            <p>VILLA K'RIBEAN</p>
+            <VideoButton videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />
           </div>
               <ButtonReservation />
         </nav>

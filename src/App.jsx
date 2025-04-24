@@ -7,19 +7,20 @@ import Location from './Location';
 import Discover from './Discover';
 import Contact from './Contact';
 import CallToAction from './CallToAction';
+import { useState } from 'react';
 // import Video from './components/Video'
 
 function App() {
-
+  const [videoOpen, setVideoOpen] = useState(false);
 
   return (
     <>
       <div className={styles.page}>
         <section className={styles.landing}>
           <div className={styles.header}>
-            < Header />
+            < Header videoOpen={videoOpen} setVideoOpen={setVideoOpen} />
           </div>
-          <Hero  id="hero"/>
+          <Hero videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/>
         </section>
         {/* <CallToAction/> */}
         <div id="about">

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import VideoScreen from './VideoScreen';
 import heroImage from './assets/palmier.jpg';
 import Arrow from './Down-arrow';
 import styles from './App.module.css'
@@ -25,10 +25,7 @@ const useElementOnScreen = (options) => {
   return [containerRef, isVisible];
 };
 
-
-
-export default function Hero() {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
+export default function Hero(props) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [heroTitleRef, isHeroTitleVisible] = useElementOnScreen({
     threshold: 0.4,
@@ -36,12 +33,12 @@ export default function Hero() {
   });
 
   return (
-    <section className={styles.hero} onClick={() => setIsVideoOpen(true)}>
-      <div className={styles.hero}>
-        <div         
-        className={styles.heroImage}
+    <>
+      {props.videoOpen && <VideoScreen videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />}
+      <section className={styles.hero}>
+        <div className={styles.heroImage}
           onLoad={() => setImageLoaded(true)}>
-        <Video />
+          <Video />
         </div>
         <h1 
           ref={heroTitleRef}
@@ -57,8 +54,8 @@ export default function Hero() {
         <div className={styles.heroButton}>
           <Arrow color="#ffffff" width="100" height="100" />
         </div>
-      </div>
-      {/* add menu button  */}
-    </section>
+        {/* add menu button  */}
+      </section>
+    </>
   );
 }

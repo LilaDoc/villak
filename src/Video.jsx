@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.css'
-import leaf from '/home/lyj/Dev/vilakarib/src/assets/hayley-maxwell-Z-yBoorc158-unsplash.jpg'
+import VideoScreen from './VideoScreen';
 export default function Video() {
     return (
         <section className={styles.videoSection}>

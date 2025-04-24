@@ -42,7 +42,7 @@ export default function About() {
                 <div className={styles.cardImage}>
                   <img src={person} alt="About" className={styles.icon} />
                 </div>
-                <p>6</p>
+                <p>4-6</p>
                 <p>VOYAGEURS</p>
               </div>
               <div className={styles.card}>

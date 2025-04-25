@@ -82,6 +82,7 @@
     overflow: hidden;
   }
   .heroImage {
+    display: none;
     width: 100%;
     height: 100%;
     object-fit: fill;
@@ -744,6 +745,8 @@
   .aroundText {
     width: 80%;
     padding: 2rem;
+    text-align: center;
+
   }
   .aroundDistance {
     font-size: 18px;
@@ -937,7 +940,8 @@
     font-size: 18px;
     font-weight: 400;
     color: rgb(0, 0, 0);
-    text-align: left;
+    text-align: center;
+  
   }
 
   .contactContainer a {
@@ -1228,7 +1232,10 @@
   .heroVideo {
     display: none;
   }
+  .hero h1 {
+    top: 75%;
   }
+}
 
   @media screen and (max-width: 768px) {
     .hero h1 {
@@ -1302,14 +1309,14 @@
     .card {
       padding: 1rem;
     }
+    .contactContainer  {
+      padding:0;
+    }
+    .contactContainer p {
+      font-size: 14px;
+    }
 
-    .decouverteImage, .aventureImage {
-      width: 250px;
-      height: 250px;
-    }
-    .aboutText h3 {
-      font-size: 24px;
-    }
+
   }
 
   .carousel {
@@ -1429,3 +1436,78 @@
     width: 100%;
   }
 
+
+@media screen and (max-width: 1080px) and (min-width: 768px) {
+  .reservationContent {
+    flex-direction: column;
+  }
+}
+
+/* Media query spécifique pour la dimension paysage 1080px x 810px */
+@media only screen and (width: 1080px) and (height: 810px), 
+       only screen and (width: 810px) and (height: 1080px) and (orientation: landscape) {
+  /* Styles pour About section similaires à max-width: 840px */
+  .hero h1 {
+    top: 70%;
+  }
+  .cardContainer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+  }
+  
+  .aboutTextContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .aboutText {
+    margin-top: 0;
+    height: auto;
+    font-size: 14px;
+  }
+  
+  .aboutText p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .cardText {
+    padding-bottom: 2rem;
+    height: auto;
+    width: 100%;
+  }
+
+  .aboutText {
+    padding: 2rem;
+    height: auto;
+  }
+  
+  .aboutServicesItem p {
+    font-size: 14px;
+  }
+  
+  .aboutServicesItem img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .aboutContainer {
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+}

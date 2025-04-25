@@ -7,7 +7,10 @@ const VideoButton = (props) => {
   return (
     <div >
       <button className={styles.videoButton} onClick={() => props.setVideoOpen(true)}>
-        <img src={videoImage} alt="video" className={styles.videoButtonImage} />
+        <div className={styles.videoButtonImageIcon}>
+          <img src={videoImage} alt="video" className={styles.videoButtonImage} />
+          <span className={`material-symbols-outlined ${styles.videoButtonIcon}`}>play_arrow</span>
+        </div>
         <span className={`${styles.videoButtonText} ${styles.callToActionSpan}`}>Voir la vidéo</span>
       </button>
     </div>

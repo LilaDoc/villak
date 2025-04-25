@@ -203,6 +203,9 @@
       .videoButton {
         border: 1px solid rgb(255, 255, 255)!important;
       }
+      .videoButtonIcon {
+        color: rgb(255, 255, 255)!important;
+      }
 
       /* .callToActionContainer {
         height: 50px; 
@@ -244,6 +247,18 @@
     background-color: transparent;
     border-radius: 10px;
     border: 1px solid black;
+    color: rgb(0, 0, 0);
+  }
+  .videoButtonImageIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  } 
+  .videoButtonIcon {
+    position: absolute;
+    font-size: 30px; /* Taille de l'icône */
+    margin-right: 8px;
     color: rgb(0, 0, 0);
   }
   .videoButtonImage {

@@ -100,7 +100,7 @@
   }
   .hero h1 {
     position: absolute;
-    top: 89%;
+    top: 98%;
     left: 70%;
     width: 150%;
     height: 50%;
@@ -118,7 +118,7 @@
 
   }
 
-  .heroTitle {
+  .heroTitle, .heroText h2 {
     transition: opacity 1.5s ease-in-out;  /* Transition uniquement sur l'opacité */
   }
 
@@ -167,18 +167,21 @@
     font-weight: 400;
 
   }
-  @media screen and (max-width: 1024px) {
-    
+  @media screen and (max-width: 1998px) {
     .hero h1 {
-      font-size: 48px;
-      left: 50%;
+      font-size: 64px;
+      top: 83%;
     }
-    .heroText {
-      font-size: 16px;
-      left: 50%;
-      width: 100%;
+    .heroText h2 {
+      font-size: 20px;
+      top: 100%;
+
+    }
+    .heroButton {
+      top: 90%;
     }
   }
+
   @media screen and (max-width: 768px) {
       .hero h1 {
         font-size: 40px;
@@ -996,90 +999,31 @@
       text-align: center;
     }
   }
-  @media screen and (max-width: 1598px) {
-    .decouverteImage, .aventureImage {
-      width: 200px;
-      height: 200px;
-    }
 
-    .decouverteText, .aventureText {
-      font-size: 16px;
-    }
-
-    .decouverteTitle, .aventureTitle {
-      padding-top: 4rem;
-      margin: 0;
-      width: 100%;
-      text-align: center;
-    }
-
-    .decouverteTitle h2, .aventureTitle h2 {
-      font-size: 48px;
-      text-align: center;
-    }
+@media screen and (max-width: 1998px) {
+  .hero h1 {
+    top: 88%;
   }
-
-  @media screen and (max-width: 1260px) {
-    .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
-      font-size: 40px;
-    }
-
-    .decouverteContent, .aventureContent {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .decouverteImage, .aventureImage {
-      margin: 2rem 0;
-    }
-
-    .decouverteText, .aventureText {
-      width: 100%;
-      margin: 2rem 0;
-      text-align: center;
-    }
-
-    .decouverteTitle, .aventureTitle {
-      margin: 0;
-      width: 100%;
-      text-align: center;
-    }
+  .heroText h2 {
+    top: 96%;
   }
+  .heroButton {
+    top: 100%;
+  }
+}
   /* Media Queries pour le responsive */
-  @media screen and (max-width: 1024px) {
-    .heroText {
+  @media screen and (max-width: 1504px) {
+    /* .heroText {
       opacity: 0;
+    } */
+    .hero h1 {
+      top: 72%;
     }
-    .decouverteSection {
-      height: auto;
-      min-height: unset;
-      padding: 2rem 0;
-      gap: 2rem;
+    .heroText h2 {
+      top: 80%;
     }
-
-    .decouverteContainer, .aventureSection {
-      height: auto;
-      margin-bottom: 2rem;
-      padding: 1rem 0;
-    }
-
-    .decouverteContent, .aventureContent {
-      padding: 1rem;
-      height: auto;
-      gap: 1rem;
-    }
-
-    .decouverteTitle, .aventureTitle {
-      position: static;
-      margin: 1rem 0;
-      top: unset;
-    }
-
-    .decouverteText, .aventureText {
-      margin: 1rem;
-      width: 80%;
+    .heroButton {
+      top: 80%;
     }
 
     h1 {
@@ -1160,6 +1104,51 @@
       font-size: 14px;
     }
 
+  }
+  @media screen and (max-width: 1330px) {
+    .hero h1 {
+      top:65%;
+    }
+    .heroText h2 {
+      top: 70%;
+    }
+    .heroButton {
+      top: 75%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .heroText h2 {
+      top: 72%;
+    }
+    .heroButton {
+      top: 72%;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .heroText h2 {
+      display: none;
+    }
+    .hero h1 {
+      top: 50%;
+      left: 50%;
+    }
+    .heroButton {
+      top: 60%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .hero h1 {
+      top: 40%;
+      font-size:40px;
+      /* margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0; */
+      background-color: transparent;
+    }
+    .heroButton {
+      top: 45%;
+    }
   }
   @media screen and (max-width: 840px) {
     .cardContainer {
@@ -1247,8 +1236,18 @@
   .heroVideo {
     display: none;
   }
+  .heroText h2 {
+    display: none;
+  }
   .hero h1 {
-    top: 75%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 40%;
+  }
+  .heroButton {
+    top: 80%;
   }
 }
 
@@ -1452,7 +1451,7 @@
   }
 
 
-@media screen and (max-width: 1080px) and (min-width: 768px) {
+@media screen and (max-width: 1404px) and (min-width: 768px) {
   .reservationContent {
     flex-direction: column;
   }
@@ -1529,3 +1528,63 @@
   }
 
 }
+@media screen and (max-height: 900px) {
+  .hero h1 {
+    font-size: 32px;
+    top:77%;
+  }
+  .heroText h2 {
+    font-size: 16px;
+    top: 90%;
+  }
+  .heroButton {
+    top: 80%;
+  }
+}
+@media screen and (max-height: 800px) {
+  .hero h1 {
+    font-size: 40px;
+    top: 100%;
+  }
+  .heroText h2 {
+    font-size: 16px;
+    top: 100%;
+  }
+  .heroButton {
+    top: 105%;
+  }
+}
+@media screen and (max-height: 980px) {
+  .hero h1 {
+    top: 102%;
+  }
+  .heroText h2 {
+    top: 115%;
+  }
+  .heroButton {
+    top: 110%;
+  }
+}
+@media screen and (max-height: 790px) {
+  .hero h1 {
+    top: 100%;
+  }
+  .heroText h2 {
+    top: 115%;
+  } 
+  .heroButton {
+    top: 110%;
+  }
+}
+@media screen and (max-height: 750px) {
+  .hero h1 {
+    top: 100%;
+  }
+  .heroText h2 {
+    top: 115%;
+  }
+  .heroButton {
+    top: 110%;
+  }
+}
+

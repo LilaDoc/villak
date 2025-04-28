@@ -32,6 +32,10 @@ export default function Hero(props) {
     rootMargin: '100px 0px 0px 0px'
   });
 
+  const [heroTextRef, isHeroTextVisible] = useElementOnScreen({
+    threshold: 0.4,
+    rootMargin: '100px 0px 0px 0px'
+  });
   return (
     <>
       {props.videoOpen && <VideoScreen videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />}
@@ -49,11 +53,10 @@ export default function Hero(props) {
         >
           <span className="capitalize">V</span>ILLA K'RIBEAN
         </h1>
-        <div className={styles.heroOverlay}>
-          <div className={styles.heroText}>
-            <h2>LOCATION DE VACANCES AU MOULE</h2>
+          <div className={styles.heroText} >
+            <h2 ref={heroTextRef} className={`${(isHeroTextVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}>LOCATION DE VACANCES AU MOULE</h2>
           </div>
-        </div>
+
         <div className={styles.heroButton}>
           <Arrow color="#ffffff" width="100" height="100" />
         </div>

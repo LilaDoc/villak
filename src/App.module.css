@@ -1456,6 +1456,9 @@
   .reservationContent {
     flex-direction: column;
   }
+  .slideWrapper{
+    height: 500px;
+  }
 }
 
 /* Media query spécifique pour la dimension paysage 1080px x 810px */

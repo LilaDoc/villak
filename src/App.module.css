@@ -195,7 +195,7 @@
       }
 
       .header .callToActionContainer h2 {
-        font-size: 14px !important;
+        font-size: 18px !important;
         margin-right: 1rem;
         margin-top: 1rem;
         letter-spacing: 1px;
@@ -219,21 +219,22 @@
       }
       .contactSection p {
         width: 100%;
-        font-size: 14px !important;
+        font-size: 18px !important;
         padding: 1rem;
       }
       .contactSection h2 {
-        font-size: 20px !important;
+        font-size: 24px !important;
+        padding: 1rem;
       }
       .contactSection a {
-        font-size: 14px !important;
+        font-size: 18px !important;
       }
       .aroundText {
-        font-size: 14px !important;
+        font-size: 18px !important;
         text-align: center;
       }
       .aroundDistance {
-        font-size: 14px !important;
+        font-size: 18px !important;
       }
       
 
@@ -951,7 +952,7 @@
     font-size: 72px;
     font-weight: 400;
     color: rgb(0, 0, 0);
-    text-align: left;
+    text-align: center;
   }
   .contactContainer p {
     font-family: "Playfair Display", serif;
@@ -1083,7 +1084,7 @@
       margin: 0;
     }
     .aroundTitle h3 {
-      font-size: 24px;
+      font-size: 32px;
     }
     
 
@@ -1098,10 +1099,10 @@
       height: auto;
     }
     .aroundCard h4 {
-      font-size: 18px;
+      font-size:24px;
     }
     .aroundCard p {
-      font-size: 14px;
+      font-size: 18px;
     }
 
   }
@@ -1149,6 +1150,13 @@
     .heroButton {
       top: 45%;
     }
+    .videoSection {
+      height: auto;
+      margin-bottom: 0;
+    }
+    .landing{
+      height: 70vh;
+    }
   }
   @media screen and (max-width: 840px) {
     .cardContainer {
@@ -1171,11 +1179,11 @@
     .aboutText {
       margin-top: 0;
       height: auto;
-      font-size: 14px;
+      font-size: 18px;
       ;
     }
     .aboutText p {
-      font-size: 14px;
+      font-size: 18px;
       font-family: "Open Sans", sans-serif;
     }
     .card {
@@ -1195,7 +1203,7 @@
       height: auto;
     }
     .callToAction h2{
-      font-size: 18px;
+      font-size: 24px;
     }
     .aroundContainer{
       padding: 1rem;
@@ -1206,13 +1214,13 @@
       text-align: center;
     }
     .aroundTitle h3 {
-      font-size: 18px;
+      font-size: 24px;
     }
   .capitalize   {
-      font-size: 14px !important;
+      font-size: 18px !important;
     }
   .aboutServicesItem p {
-    font-size: 14px;
+    font-size: 18px;
   }
   .aboutServicesItem img {
     width: 20px;
@@ -1249,6 +1257,8 @@
   .heroButton {
     top: 80%;
   }
+
+
 }
 
   @media screen and (max-width: 768px) {
@@ -1297,7 +1307,7 @@
       height: 59px;
     }
     .card p {
-      font-size: 14px;
+      font-size: 18px;
     }
     .card {
       width: 100px;
@@ -1327,7 +1337,7 @@
       padding:0;
     }
     .contactContainer p {
-      font-size: 14px;
+      font-size: 18px;
     }
 
 
@@ -1487,11 +1497,11 @@
   .aboutText {
     margin-top: 0;
     height: auto;
-    font-size: 14px;
+    font-size: 18px;
   }
   
   .aboutText p {
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Open Sans", sans-serif;
   }
   
@@ -1513,7 +1523,7 @@
   }
   
   .aboutServicesItem p {
-    font-size: 14px;
+    font-size: 18px;
   }
   
   .aboutServicesItem img {

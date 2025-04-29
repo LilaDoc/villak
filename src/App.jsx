@@ -1,13 +1,11 @@
 import styles from './App.module.css'
 import Header from './Header'
-import Hero from './Hero';
-import Video from './Video';
 import About from './About';
 import Location from './Location';
-import Discover from './Discover';
 import Contact from './Contact';
 import CallToAction from './CallToAction';
 import { useState } from 'react';
+import Herov2 from './Herov2';
 // import Video from './components/Video'
 
 function App() {
@@ -20,7 +18,8 @@ function App() {
           <div className={styles.header}>
             < Header videoOpen={videoOpen} setVideoOpen={setVideoOpen} />
           </div>
-          <Hero videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/>
+          <Herov2 videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/>
+          {/* <Hero videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/> */}
         </section>
         {/* <CallToAction/> */}
         <div id="about">

@@ -9,7 +9,7 @@ const Header = (props) => {
           <div className={styles.logo}>
             <VideoButton videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />
           </div>
-              <ButtonReservation />
+              {/* <ButtonReservation /> */}
         </nav>
       </header>
     );

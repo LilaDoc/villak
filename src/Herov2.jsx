@@ -3,6 +3,7 @@ import styles from './Hero.module.css';
 import Video from './Video';
 import Arrow from './Down-arrow';
 import VideoScreen from './VideoScreen';
+import heroImage from './assets/hero.jpg';
 // Ajout du hook personnalisé
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);
@@ -41,20 +42,23 @@ const Hero = (props) => {
     <>
     {props.videoOpen && <VideoScreen videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />}
     <section className={styles.hero}>
-        <div className={styles.backgroundVideo}
+        <div className={`${styles.backgroundVideo} ${styles.show}`}
              onLoad={() => setImageLoaded(true)}>
             <Video />
         </div>
+        <div className={`${styles.backgroundImage} ${styles.hidden}`}>
+            <img src={heroImage} alt="hero" />
+        </div>
         <div className={styles.heroArrowTitleContainer}>
-            <div></div>
-
-            <div className={styles.heroTitleContainer}>
+            <div className={styles.heroTitlesContainer}>
+                <div className={styles.heroTitleContainer}>
                 <h1 
                   ref={heroTitleRef}
                   className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
-                >
+                >   
                     <span className="capitalize">V</span>ILLA K'RIBEAN
                 </h1>
+                </div>
                 <div className={styles.heroSubtitleContainer}>
                     <h2 
                       ref={heroSubtitleRef}

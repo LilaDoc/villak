@@ -5,21 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  overflow: hidden;
 }
 
-.heroArrowTitleContainer {
-  position: absolute;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 120%;
-  height: 50%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 1700% 70% 0 0;
-  padding: 5rem;
-}
 
 .backgroundVideo {
   position: absolute;
@@ -31,7 +19,163 @@
   z-index: 0;
 }
 
+.backgroundImage {
+  display: none;
+  object-fit: cover;
+}
+
+.heroArrowTitleContainer {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 4fr 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+
+}
+.heroTitlesContainer {
+
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  gap: 0;
+  
+}
 .heroTitleContainer {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.heroTitle {
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 400;
+  color: #ffffff;
+  transition: all 0.8s ease-in-out;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 40%;
+}
+.heroSubtitleContainer {
+  margin-bottom: 10%;
+  align-self: flex-end;
+  
+}
+
+.heroSubtitle {
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.8s ease-in-out;
+}
+
+.heroArrow {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  justify-self: center;
+  align-self: center;
+}
+
+.heroArrow:hover {
+  transform: translate(0%, 50%);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+@media (max-width: 1660px) {
+  .heroTitlesContainer {
+
+    grid-column: 2 / 4;
+  }
+}
+@media (max-width: 1500px) {
+  /* .heroArrow{
+    fill: #000000;
+    filter: brightness(0);
+    transition: all 0.8s ease-in-out;
+  } */
+}
+@media (max-width: 1270px) {
+  /* .heroTitle{
+    color: #000000;
+    transition: all 0.8s ease-in-out;
+  } */
+  /* .heroSubtitle{
+    color: #000000;
+    transition: all 0.8s ease-in-out;
+  } */
+   .heroTitlesContainer{
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+   }
+   .heroTitleContainer{
+    height: 40%;
+   }
+   .heroSubtitleContainer{
+    align-self: center;
+    justify-self: center;
+   }
+   .heroArrow{
+    display: none;
+   }
+}
+@media (max-width: 860px) {
+  .backgroundVideo {
+    display: none;
+  }
+  .backgroundImage {
+    display: block;
+  }
+  .heroArrowTitleContainer{
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 2fr 2fr 4fr;
+ 
+    margin: 0;
+    padding: 0;
+  }
+  .heroTitlesContainer{
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  /* .heroTitle{
+    color: #000000;
+    transition: all 0.8s ease-in-out;
+  } */
+  
+}
+@media (max-width: 600px) {
+  .heroSubtitleContainer{
+    display: none;
+  }
+
+}
+/* .heroTitlesContainer {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -40,42 +184,57 @@
   width: 100%;
   height: 100%;
   transition: opacity 1.5s ease-in-out; 
+  aspect-ratio: 16/9;
+}
+
+.heroTitleContainer {
+  position: relative;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .heroTitle {
-  position: relative;
-  right: 10%;
-  display: flex;
-  flex-direction: raw;
+  /* position: relative; */
+  /* display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  font-size: 64px;
+  justify-content: center;
+  font-size: clamp(32px, 5vw, 64px);
   font-weight: 400;
   color: #ffffff;
   transition: all 0.8s ease-in-out;
-}
+  text-align: center;
+  width: 100%;
+} */
 
-.heroSubtitleContainer {
-  position: relative;
-  right: 10%;
+/* .heroSubtitlesContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  bottom: 15%;
-}
+  align-items: center;
+  justify-content: center;
+  position: relative; */
+  /* right: 20%; */
 
-.heroSubtitle {
-  font-size: 20px !important;
-  font-weight: 400 !important;
+/* } */
+
+/* .heroSubtitle {
+  position: absolute;
+  right: 20%;
+  top: 70%;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 400;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   transition: all 0.8s ease-in-out;
+  margin: 0;
+  padding: 0;
 }
 
 /* Classes d'animation pour l'apparition */
-.hiddenApparition {
+/* .hiddenApparition {
   opacity: 0;
 
 }
@@ -86,12 +245,72 @@
 }
 
 .heroArrow:hover {
-  transform: translate(0%, 25px);
+  transform: translate(0%, 50%);
   transition: transform 0.3s ease;
+  cursor: default;
 }
 
 .heroArrow {
   width: 40px;
   height: 40px;
+  transform: translate(0, 0);
   transition: transform 0.3s ease;
+  cursor: pointer; */
+  /* position: relative;
+  right: 0; */
+/* }
+
+.backgroundImage {
+  display: none;
+  object-fit: cover;
+} */
+
+/* Ajout de media queries pour les petits écrans */
+/* @media (max-width: 1600px) {
+  .heroArrow {
+    transition: all 0.8s ease-in-out;
+    fill: #000000;
+    filter: brightness(0);
+    color: #000000;
+  }
 }
+@media (max-width: 1300px) {
+  .heroArrowTitleContainer { */
+    /* height: 1000%; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .heroTitlesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .heroTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .heroSubtitle {
+    display: flex;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .heroTitle {
+    font-size: clamp(24px, 4vw, 48px);
+    text-align: center;
+    width: 100%;
+  }
+}  */

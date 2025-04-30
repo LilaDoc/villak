@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './App.module.css'
 import VideoScreen from './VideoScreen';
-export default function Video() {
+
+const Video = forwardRef((props, ref) => {
     return (
         <section className={styles.videoSection}>
            {/* <div className={styles.videoTitle}>
              <h2><span className='capitalize'>U</span>ne parenthèse au soleil</h2>
           </div> */}
           <iframe
+              ref={ref}
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/oahxGMXj0Ls?autoplay=1&mute=1&loop=1&playlist=oahxGMXj0Ls"
@@ -18,5 +20,7 @@ export default function Video() {
               className={styles.videoFrame}
           ></iframe>
         </section>
-    )
-}
+    );
+});
+
+export default Video;

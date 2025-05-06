@@ -6,6 +6,7 @@ import Contact from './Contact';
 import CallToAction from './CallToAction';
 import { useState } from 'react';
 import Herov2 from './Herov2';
+import VideoButton from './VideoButton';
 // import Video from './components/Video'
 
 function App() {
@@ -21,6 +22,10 @@ function App() {
           <Herov2 videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/>
           {/* <Hero videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/> */}
         </section>
+        <div className={styles.videoButtonContainer}>
+          <VideoButton videoOpen={videoOpen} setVideoOpen={setVideoOpen} />
+
+        </div>
         {/* <CallToAction/> */}
         <div id="about">
           <About />
@@ -30,7 +35,7 @@ function App() {
         </div>
 
           {/* <Discover/> */}
-        <div id="contact">
+        <div id="contact" className={styles.hidden480px}>
           <Contact />
         </div>
       </div>

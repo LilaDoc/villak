@@ -6,7 +6,7 @@ const Header = (props) => {
     return (
       <header className={styles.header}>
         <nav className={styles.navContainer}>
-          <div className={styles.logo}>
+          <div className={`${styles.logo} ${styles.hidden480px}`}>
             <VideoButton videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />
           </div>
               {/* <ButtonReservation /> */}

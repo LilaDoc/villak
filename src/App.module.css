@@ -209,14 +209,13 @@
       .videoButtonIcon {
         color: rgb(255, 255, 255)!important;
       }
-
       /* .callToActionContainer {
         height: 50px; 
         width: 50px;
       } */
-      .callToActionSpan {
+      /* .callToActionSpan {
         display: none;
-      }
+      } */
       .contactSection p {
         width: 100%;
         font-size: 18px !important;
@@ -376,7 +375,9 @@
     text-align: center;
     margin-bottom: 2rem;
   }
-
+  .hidden480px{
+    display: none;
+  }
   .callToAction {
     display: flex;
     align-items: center;
@@ -1256,7 +1257,9 @@
   .heroButton {
     top: 80%;
   }
-
+  .contactContainer h2{
+    font-size: 32px;
+  }
 
 }
 
@@ -1338,8 +1341,40 @@
     .contactContainer p {
       font-size: 18px;
     }
-
-
+    .card p { 
+      font-size: 14px;
+    }
+    .card img {
+      width: 32px;
+      height: 32px;
+    }
+    .aroundTitle{
+      justify-content: center;
+      padding: 0;
+    }
+    .aroundTitle h3{
+      font-size: 24px;
+      text-align: center;
+    }
+    .aroundDistance{
+      display: none;
+    }
+    .hidden480px{
+      display: none;
+    }
+    .show480px{
+      display: block;
+    }
+    /* .videoButtonContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+    
+    .aboutContainer{
+      margin: 0;
+    }
+    
   }
 
   .carousel {

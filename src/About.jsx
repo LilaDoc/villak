@@ -112,7 +112,7 @@ export default function About() {
                     <img src={bebechambre} alt="About" height={30} width={30} />
                   </div>
                   <p>
-                    LIT BÉbÉ
+                    LIT BÉBÉ
                   </p>
                 </div>
               </div>

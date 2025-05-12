@@ -12,7 +12,7 @@ const Video = forwardRef((props, ref) => {
               ref={ref}
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/oahxGMXj0Ls?autoplay=1&mute=1&loop=1&playlist=oahxGMXj0Ls"
+              src="https://www.youtube.com/embed/vuApAB0VHjo?autoplay=1&controls=1&mute=1&loop=1&playlist=vuApAB0VHjo&vq=hd1080"
               title="Villa K'ribean"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

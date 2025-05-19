@@ -31,9 +31,9 @@ export default function About() {
         </div>
         <div className={styles.aboutTextContainer}>
           <div className={styles.aboutText}>
-            <h3 className={styles.playfairDisplay}><span className="capitalize">B</span>ienvenue à la Villa des K'ribean,</h3>
-            <p className={styles.playfairDisplay}>une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/><br/>
-            Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. <br/><br/>
+            <h3 className={styles.playfairDisplay}><span className="capitalize">B</span>ienvenue à la Villa des K&apos;ribean,</h3>
+            <p className={styles.playfairDisplay}>Une retraite d&apos;exception au cœur d&apos;un environnement paisible.<br/>
+            Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/><br/>
             Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
             </p>
           </div>

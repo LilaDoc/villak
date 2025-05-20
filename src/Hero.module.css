@@ -160,14 +160,16 @@
     justify-content: flex-start;
     grid-row: 2/4;
     grid-column: 1/4;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    /* 
+    background-color: rgba(0, 0, 0, 0.1); */
     border-radius: 5px;
   }
   .heroTitle{
     font-size: clamp(54px, 4vw, 68px);
     transition: all 0.8s ease-in-out;
     font-weight: 00;
+    backdrop-filter: ;
   }
   
 }

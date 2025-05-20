@@ -3,7 +3,7 @@ import styles from './Hero.module.css';
 import Video from './Video';
 import Arrow from './Down-arrow';
 import VideoScreen from './VideoScreen';
-import heroImage from './assets/hero.jpg';
+import heroImage from './assets/hero.png';
 // Ajout du hook personnalisé
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);

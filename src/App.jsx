@@ -22,13 +22,13 @@ function App() {
           <Herov2 videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/>
           {/* <Hero videoOpen={videoOpen} setVideoOpen={setVideoOpen} id="hero"/> */}
         </section>
-        <div className={styles.videoButtonContainer}>
+        {/* <div className={styles.videoButtonContainer}>
           <VideoButton videoOpen={videoOpen} setVideoOpen={setVideoOpen} />
 
-        </div>
+        </div> */}
         {/* <CallToAction/> */}
         <div id="about">
-          <About />
+          <About id="about"/>
         </div>
         <div id="location">
           <Location />

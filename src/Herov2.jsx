@@ -4,6 +4,8 @@ import Video from './Video';
 import Arrow from './Down-arrow';
 import VideoScreen from './VideoScreen';
 import heroImage from './assets/hero.png';
+import VideoButton from './VideoButton';
+import CallToAction from './CallToAction';
 // Ajout du hook personnalisé
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);
@@ -66,10 +68,12 @@ const Hero = (props) => {
                     >
                         LOCATION DE VACANCES AU MOULE
                     </h2>
+                    {/* <VideoButton videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} /> */}
+                    <CallToAction />
                 </div>
             </div>
             <div className={styles.heroArrow}>
-                <Arrow color="#ffffff" width="100" height="100" />
+                <a href="#about"><Arrow color="#ffffff" width="100" height="100" /></a>
             </div>
         </div>
     </section>

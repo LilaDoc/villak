@@ -19,6 +19,7 @@ import aventure from './assets/aventure.jpg'
 import AroundCard from './AroundCard'
 import Video from './Video'
 import ButtonReservation from './ButtonReservation'
+import ButtonReservationBlack from './ButtonReservationBlack'
 import leaf from './assets/black-shadow-leaves-with-sunlight-white-backdrop.jpg'
 export default function About() {
   return (
@@ -157,7 +158,7 @@ export default function About() {
         <Video className={styles.noDisplay}/> */}
         <div className={styles.reservation}>
           <div className={styles.reservationContent}>
-            <ButtonReservation/>
+            <ButtonReservationBlack/>
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './App.module.css'
 import React from 'react'
-
+import FullScreenImage from './FullScreenImage'
 
 import img1 from './assets/DSCF3980_edit.jpeg'
 import img2 from './assets/DSCF3985_edit.jpeg'
@@ -17,7 +17,7 @@ function Caroussel() {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [touchStart, setTouchStart] = useState(0)
     const [touchEnd, setTouchEnd] = useState(0)
-    
+    const [openImage, setOpenImage] = useState(false)
 
     const images = [
         img1, img2, img3, img4, img5, img6, img7, img8, img9
@@ -54,12 +54,15 @@ function Caroussel() {
             prevSlide()
         }
     }
+    const handleImageClick = () => {
+        setOpenImage(true)
+    }
 
     return (
             <div className={styles.carousel}>
 
-                
-                <div className={styles.slideContainer}>
+                {openImage && <FullScreenImage image={images[currentIndex]} setFullScreenImageOpen={setOpenImage} />}
+                <div className={styles.slideContainer} onClick={handleImageClick}>
                     <div 
                         className={styles.slideWrapper} 
                         style={{ 
@@ -68,6 +71,7 @@ function Caroussel() {
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}
                         onTouchEnd={handleTouchEnd}
+                        onClick={() => setOpenImage(true)}
                     >
                         {images.map((image, index) => (
                             <img 

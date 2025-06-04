@@ -246,11 +246,11 @@
     height: auto;
     flex-direction: row;
     margin: 1rem;
-    backdrop-filter: blur(20px);
+
     background-color: transparent;
     border-radius: 10px;
-    border: 1px solid black;
-    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
   }
   .videoButtonImageIcon {
     display: flex;
@@ -262,7 +262,7 @@
     position: absolute;
     font-size: 30px; /* Taille de l'icône */
     margin-right: 8px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   .videoButtonImage {
     width: 50px;
@@ -272,7 +272,7 @@
     scale: 1;
   }
   .videoButtonText {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     
     text-align: center;
@@ -282,7 +282,7 @@
     margin-left: 0;
   }
   .videoButton:hover {
-    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(20px);
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -385,14 +385,29 @@
 
   }
 
-  .callToActionContainer h2 {
+  .callToActionContainerBlack h2 {
     font-size: 20px;
     font-weight: 400;
     color: rgb(0, 0, 0);
     text-align: center;
+    font-family: "Playfair Display", serif;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    backdrop-filter: blur(20px);
+    letter-spacing: 2px
+  }
+
+  .callToActionContainer h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
     /* text-transform: uppercase; */
     font-family: "Playfair Display", serif;
-    border: 0.1px solid black;
+    border: 0.1px solid rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 10px;
     margin-right: 2rem;
@@ -470,6 +485,54 @@
     justify-content: center;
     margin-top: 20px;
   }
+
+  .fullScreenImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(17, 16, 16, 0.3);
+  }
+  /* .fullScreenImageClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 101;
+    cursor: pointer;  
+    margin: 1rem;
+    backdrop-filter: blur(20px);
+  } */
+  .fullScreenImageContent {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+  }
+  .fullScreenImageContent img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .fullScreenImageImg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    background: black;
+  }
+
   .aboutTextContainer {
     margin: 2rem;
     display: flex;

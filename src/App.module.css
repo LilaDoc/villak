@@ -238,6 +238,18 @@
       
 
   }
+  .videoButtonContainer {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    z-index: 200;
+
+  } 
   .videoButton {
     display: flex;
     align-items: center;
@@ -246,11 +258,11 @@
     height: auto;
     flex-direction: row;
     margin: 1rem;
-
     background-color: transparent;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
+    transition: background 0.4s, color 0.4s, border 0.4s;
   }
   .videoButtonImageIcon {
     display: flex;
@@ -259,19 +271,20 @@
     position: relative;
   } 
   .videoButtonIcon {
-    position: absolute;
+    transition: color 0.4s;
     font-size: 30px; /* Taille de l'icône */
     margin-right: 8px;
     color: rgb(255, 255, 255);
   }
-  .videoButtonImage {
+  /* .videoButtonImage {
     width: 50px;
     height: 50px;
     margin: 1rem;
     object-fit: cover;
     scale: 1;
-  }
+  } */
   .videoButtonText {
+    transition: color 0.4s;
     font-size: 14px;
     font-weight: 400;
     
@@ -293,7 +306,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -1504,7 +1517,7 @@
   }
   .arrowBtn:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(-50%) scale(1.2s);
     transition: all 0.3s ease;
   }
 
@@ -1709,3 +1722,27 @@
   }
 }
  */
+
+.videoButtonContainer.dark .videoButton {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: #000;
+  border: 1px solid #000;
+}
+.videoButtonContainer.dark .videoButtonIcon {
+  color: #000;
+}
+.videoButtonContainer.dark .videoButtonText {
+  color: #000;
+}
+.videoButtonContainer .videoButton:hover{
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.videoButtonContainer .videoButton:hover .videoButtonText,
+.videoButtonContainer .videoButton:hover .videoButtonIcon {
+  color: #fff;
+  transition: color 0.4s;
+}

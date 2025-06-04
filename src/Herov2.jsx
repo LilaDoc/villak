@@ -43,7 +43,8 @@ const Hero = (props) => {
   return (
     <>
     {props.videoOpen && <VideoScreen videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />}
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
+
         <div className={`${styles.backgroundVideo} ${styles.show}`}
              onLoad={() => setImageLoaded(true)}>
             <Video />
@@ -68,8 +69,8 @@ const Hero = (props) => {
                     >
                         LOCATION DE VACANCES AU MOULE
                     </h2>
-                    {/* <VideoButton videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} /> */}
                     <CallToAction />
+                    <VideoButton videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />
                 </div>
             </div>
             <div className={styles.heroArrow}>

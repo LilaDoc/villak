@@ -25,7 +25,7 @@ export default function About() {
   return (
     <>
 
-    <section className={styles.aboutSection}>
+    <section className={styles.aboutSection} id="about">
       <div className={styles.aboutContainer}>
         <div className={styles.aboutCarousel}>
             <Caroussel />

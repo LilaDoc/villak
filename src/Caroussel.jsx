@@ -61,7 +61,12 @@ function Caroussel() {
     return (
             <div className={styles.carousel}>
 
-                {openImage && <FullScreenImage image={images[currentIndex]} setFullScreenImageOpen={setOpenImage} />}
+                {openImage && <FullScreenImage 
+                    image={images[currentIndex]} 
+                    setFullScreenImageOpen={setOpenImage} 
+                    nextImage={nextSlide}
+                    prevImage={prevSlide}
+                />}
                 <div className={styles.slideContainer} onClick={handleImageClick}>
                     <div 
                         className={styles.slideWrapper} 

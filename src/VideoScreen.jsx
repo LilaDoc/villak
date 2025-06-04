@@ -5,7 +5,7 @@ const VideoScreen = (props) => {
   return (
     <div className={styles.videoScreen}>
         <div className={styles.videoScreenContent}>
-          <div className={styles.videoScreenClose}>
+          <div className={styles.ScreenClose}>
             <button onClick={() => props.setVideoOpen(false)}>
               <img src={closeIcon} alt="close" />
             </button>

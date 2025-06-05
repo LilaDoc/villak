@@ -156,7 +156,7 @@ export default function About() {
       </div>
 {/* 
         <Video className={styles.noDisplay}/> */}
-        <div className={styles.reservation}>
+        <div className={styles.reservation} id="reservation">
           <div className={styles.reservationContent}>
             <ButtonReservationBlack/>
           </div>

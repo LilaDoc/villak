@@ -240,7 +240,7 @@
   }
   .videoButtonContainer {
     display: flex;
-    position: fixed;
+
     bottom: 10px;
     right: 10px;
     align-items: center;
@@ -285,11 +285,11 @@
   } */
   .videoButtonText {
     transition: color 0.4s;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px;
     margin: 1rem;
     margin-left: 0;
@@ -396,6 +396,14 @@
     align-items: center;
     justify-content: center;
 
+  }
+  .callToActionContainer{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 200;
+    border-radius: 10px;
+    padding: 1rem;
   }
 
   .callToActionContainerBlack h2 {
@@ -1349,6 +1357,9 @@
   .contactContainer h2{
     font-size: 32px;
   }
+  .callToActionContainer{
+    display: none;
+  }
 
 }
 
@@ -1723,19 +1734,13 @@
 }
  */
 
-.videoButtonContainer.dark .videoButton {
+.callToActionContainer.dark h2 {
   background: transparent;
   backdrop-filter: blur(10px);
   color: #000;
   border: 1px solid #000;
 }
-.videoButtonContainer.dark .videoButtonIcon {
-  color: #000;
-}
-.videoButtonContainer.dark .videoButtonText {
-  color: #000;
-}
-.videoButtonContainer .videoButton:hover{
+.callToActionContainer.dark h2:hover{
   background: #000;
   color: #fff;
   border: 1px solid #fff;

@@ -7,6 +7,7 @@ import CallToAction from './CallToAction';
 import { useState } from 'react';
 import Herov2 from './Herov2';
 import VideoButton from './VideoButton';
+import Footer from './Footer';
 // import Video from './components/Video'
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Contact />
         </div>
       </div>
+      <Footer />
     </>
   )
 }

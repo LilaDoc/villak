@@ -21,8 +21,21 @@
 
 .backgroundImage {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.backgroundImage img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .heroArrowTitleContainer {
@@ -140,38 +153,47 @@
    }
 }
 @media (max-width: 860px) {
+  .hero {
+    height: 100vh;
+    width: 100%;
+  }
+
   .backgroundVideo {
     display: none;
   }
+
   .backgroundImage {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
   }
-  .heroArrowTitleContainer{
+
+  .heroArrowTitleContainer {
+    position: relative;
+    z-index: 1;
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 2fr 2fr 4fr;
- 
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100%;
   }
-  .heroTitlesContainer{
+
+  .heroTitlesContainer {
     align-items: flex-start;
     justify-content: flex-start;
     grid-row: 2/4;
     grid-column: 1/4;
     backdrop-filter: blur(1px);
-    /* 
-    background-color: rgba(0, 0, 0, 0.1); */
-    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
   }
-  .heroTitle{
-    font-size: clamp(54px, 4vw, 68px);
-    transition: all 0.8s ease-in-out;
-    font-weight: 00;
-    backdrop-filter: ;
-  }
-  
 }
 @media (max-width: 600px) {
   .heroSubtitleContainer{
@@ -179,142 +201,3 @@
   }
 
 }
-/* .heroTitlesContainer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%;
-  transition: opacity 1.5s ease-in-out; 
-  aspect-ratio: 16/9;
-}
-
-.heroTitleContainer {
-  position: relative;
-  right: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.heroTitle {
-  /* position: relative; */
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(32px, 5vw, 64px);
-  font-weight: 400;
-  color: #ffffff;
-  transition: all 0.8s ease-in-out;
-  text-align: center;
-  width: 100%;
-} */
-
-/* .heroSubtitlesContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative; */
-  /* right: 20%; */
-
-/* } */
-
-/* .heroSubtitle {
-  position: absolute;
-  right: 20%;
-  top: 70%;
-  font-size: clamp(14px, 2vw, 20px);
-  font-weight: 400;
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  transition: all 0.8s ease-in-out;
-  margin: 0;
-  padding: 0;
-}
-
-/* Classes d'animation pour l'apparition */
-/* .hiddenApparition {
-  opacity: 0;
-
-}
-
-.showApparition {
-  opacity: 1;
-
-}
-
-.heroArrow:hover {
-  transform: translate(0%, 50%);
-  transition: transform 0.3s ease;
-  cursor: default;
-}
-
-.heroArrow {
-  width: 40px;
-  height: 40px;
-  transform: translate(0, 0);
-  transition: transform 0.3s ease;
-  cursor: pointer; */
-  /* position: relative;
-  right: 0; */
-/* }
-
-.backgroundImage {
-  display: none;
-  object-fit: cover;
-} */
-
-/* Ajout de media queries pour les petits écrans */
-/* @media (max-width: 1600px) {
-  .heroArrow {
-    transition: all 0.8s ease-in-out;
-    fill: #000000;
-    filter: brightness(0);
-    color: #000000;
-  }
-}
-@media (max-width: 1300px) {
-  .heroArrowTitleContainer { */
-    /* height: 1000%; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 1rem;
-    margin: 0 auto;
-  }
-  
-  .heroTitlesContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-  }
-  
-  .heroTitleContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-  }
-  
-  .heroSubtitle {
-    display: flex;
-    text-align: center;
-    margin: 1rem 0;
-  }
-  
-  .heroTitle {
-    font-size: clamp(24px, 4vw, 48px);
-    text-align: center;
-    width: 100%;
-  }
-}  */

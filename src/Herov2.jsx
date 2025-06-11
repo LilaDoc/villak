@@ -6,6 +6,8 @@ import VideoScreen from './VideoScreen';
 import heroImage from './assets/hero.png';
 import VideoButton from './VideoButton';
 import CallToAction from './CallToAction';
+import MobileReservationButton from './MobileReservationButton';
+import MobileVideoButton from './MobileVideoButton';
 // Ajout du hook personnalisé
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);
@@ -44,8 +46,9 @@ const Hero = (props) => {
     <>
     {props.videoOpen && <VideoScreen videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />}
     <section className={styles.hero} id="hero">
-
-        <div className={`${styles.backgroundVideo} ${styles.show}`}
+      <MobileReservationButton />
+      
+      <div className={`${styles.backgroundVideo} ${styles.show}`}
              onLoad={() => setImageLoaded(true)}>
             <Video />
         </div>
@@ -61,7 +64,9 @@ const Hero = (props) => {
                 >   
                     <span className="capitalize">V</span>ILLA K'RIBEAN
                 </h1>
+                
                 </div>
+                <MobileVideoButton setVideoOpen={props.setVideoOpen} />
                 <div className={styles.heroSubtitleContainer}>
                     <h2 
                       ref={heroSubtitleRef}

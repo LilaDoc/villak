@@ -1,6 +1,6 @@
 
 ---
-import App from '../App.jsx'; // adapte le chemin si besoin
+import App from '../App.astro'; // adapte le chemin si besoin
 ---
 
 <html lang="fr">
@@ -14,7 +14,7 @@ import App from '../App.jsx'; // adapte le chemin si besoin
   
   <body>
    
-    <App client:load />
+    <App  />
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

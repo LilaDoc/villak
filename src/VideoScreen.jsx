@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './App.module.css';
+import closeIcon from '../public/images/close.svg';
 
 const VideoScreen = (props) => {
   return (
@@ -7,7 +8,7 @@ const VideoScreen = (props) => {
         <div className={styles.videoScreenContent}>
           <div className={styles.ScreenClose}>
             <button onClick={() => props.setVideoOpen(false)}>
-              <img src={closeIcon} alt="close" />
+              <img src="/images/close.svg" alt="close" width="30" height="30" />
             </button>
           </div>
         <iframe

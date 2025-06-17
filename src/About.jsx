@@ -168,9 +168,9 @@ export default function About() {
             <h3 className={styles.playfairDisplay}><span className="capitalize">V</span>isitez la Guadeloupe</h3>
           </div>
           <div className={styles.aroundCards}>
-            <AroundCard link="https://fr.guadeloupe-tourisme.com/100/plage-des-alizes-le-moule/" image={beach} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="2,6km" title="Plage des Alizées" />
-            <AroundCard link="https://rhum-damoiseau.com/" image={decouverte} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="3km" title="Distillerie Damoiseau" />
-            <AroundCard link="https://www.tripadvisor.fr/Attraction_Review-g147305-d148906-Reviews-Cascade_aux_Ecrevisses-Parc_National_Basse_Terre_Island_Guadeloupe.html" image={aventure} text="La Villa des K'ribean est située à proximité de nombreux sites touristiques et de loisirs." distance="50km" title="Cascade des écrevisses"/>
+            <AroundCard link="https://fr.guadeloupe-tourisme.com/100/plage-des-alizes-le-moule/" image={beach} text="La plage des Alizés, idéale pour petits et grands : baignade paisible, jeux sur le sable et couchers de soleil magiques." distance="2,6km" title="Plage des Alizées" />
+            <AroundCard link="https://rhum-damoiseau.com/" image={decouverte} text="Partez à la rencontre du rhum local : distillerie traditionnelle, parfums envoûtants et savoir-faire créole à découvrir absolument." distance="3km" title="Distillerie Damoiseau" />
+            <AroundCard link="https://www.tripadvisor.fr/Attraction_Review-g147305-d148906-Reviews-Cascade_aux_Ecrevisses-Parc_National_Basse_Terre_Island_Guadeloupe.html" image={aventure} text="Plongez au cœur de la forêt tropicale : la cascade des Écrevisses vous offre fraîcheur, beauté sauvage et sérénité pure." distance="50km" title="Cascade des écrevisses"/>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.css';
-import closeIcon from './assets/close.svg';
+
 const VideoScreen = (props) => {
   return (
     <div className={styles.videoScreen}>

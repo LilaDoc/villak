@@ -3,7 +3,7 @@ import styles from './Hero.module.css';
 import Video from './Video';
 import Arrow from './Down-arrow';
 import VideoScreen from './VideoScreen';
-import heroImage from './assets/hero.png';
+const heroImage = '/images/hero.png';
 import VideoButton from './VideoButton';
 import CallToAction from './CallToAction';
 import MobileReservationButton from './MobileReservationButton';

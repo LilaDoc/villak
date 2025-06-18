@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from './App.module.css'
+import styles from './Caroussel.module.css'
 import React from 'react'
 import FullScreenImage from './FullScreenImage'
 
@@ -59,7 +59,7 @@ function Caroussel() {
     }
 
     return (
-            <div className={styles.carousel}>
+            <div className={styles.carousel} >
 
                 {openImage && <FullScreenImage 
                     image={images[currentIndex]} 

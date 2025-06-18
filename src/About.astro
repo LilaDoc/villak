@@ -1,6 +1,9 @@
-import React from 'react';
-import styles from './App.module.css'
-import Caroussel from './Caroussel'
+---
+import styles from './App.module.css';
+import Caroussel from './Caroussel.jsx';
+import AroundCard from './AroundCard.jsx';
+import ButtonReservationBlack from './ButtonReservationBlack.jsx';
+
 const person = '/images/person.svg';
 const bed = '/images/bed.svg';
 const shower = '/images/shower.svg';
@@ -16,17 +19,14 @@ const car = '/images/car.svg';
 const beach = '/images/beach.jpg';
 const decouverte = '/images/decouverte.jpg';
 const aventure = '/images/aventure.jpg';
-import AroundCard from './AroundCard'
-import ButtonReservationBlack from './ButtonReservationBlack'
-export default function About() {
-  return (
-    <>
+--- 
+
 
     <section className={styles.aboutSection} id="about">
       <div className={styles.aboutContainer}>
-        {/* <div className={styles.aboutCarousel}>
-            <Caroussel />
-        </div> */}
+        <div className={styles.aboutCarousel}>
+            <Caroussel client:load/>
+        </div>
         <div className={styles.aboutTextContainer}>
           <div className={styles.aboutText}>
             <h3 className={styles.playfairDisplay}><span className="capitalize">B</span>ienvenue à la Villa des K&apos;ribean,</h3>
@@ -172,7 +172,3 @@ export default function About() {
         </div>
       </div>
     </section>
-
-    </>
-    )
-}

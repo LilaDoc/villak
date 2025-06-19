@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './App.module.css';
-const closeIcon = '/images/close.svg';
+const closeIcon = '/villak/images/close.svg';
 
 const FullScreenImage = (props) => {
   return (

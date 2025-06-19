@@ -1,6 +1,6 @@
 import styles from './App.module.css'
 import { useState, useRef, useEffect } from 'react'
-const aventure = '/images/aventure.jpg';
+const aventure = '/villak/images/aventure.jpg';
 
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);

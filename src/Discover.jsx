@@ -1,9 +1,8 @@
 import styles from './App.module.css'
 import React from 'react';
 import Aventure from './Adventur'
-import decouverte from './assets/decouverte.jpg'
 import DiscoverCard from './Discovercard'
-import beach from './assets/beach.jpg'
+
 export default function Discover() {
     return (    
         <section className={styles.decouverteSection}> 
@@ -11,7 +10,7 @@ export default function Discover() {
              title="LA POINTE DES CHATEAUX" 
              distance="25" 
              description="Si vous voulez admirer un lever de soleil, c'est l'endroit idéal." 
-             image={beach} 
+             image="/villak/images/beach.jpg" 
           />
 
          <Aventure />
@@ -19,7 +18,7 @@ export default function Discover() {
              title="LA POINTE DES CHATEAUX" 
              distance="25" 
              description="Si vous voulez admirer un lever de soleil, c'est l'endroit idéal." 
-             image={decouverte} 
+             image="/villak/images/decouverte.jpg" 
           />
          
         </section>

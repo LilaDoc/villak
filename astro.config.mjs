@@ -4,6 +4,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [react()],
   output: 'static', // important pour GitHub Pages
-  site: 'https://https://liladoc.github.io/villak/',
+  site: 'https://liladoc.github.io/',
+  base: '/villak/',
 
 });

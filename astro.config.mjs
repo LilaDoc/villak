@@ -6,5 +6,4 @@ export default defineConfig({
   output: 'static', // important pour GitHub Pages
   site: 'https://liladoc.github.io/',
   base: '/villak/',
-
 });

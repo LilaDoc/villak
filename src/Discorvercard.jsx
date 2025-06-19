@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './App.module.css'
-import beach from './assets/beach.jpg'
 import { useInView } from 'react-intersection-observer'
+
 export default function DiscoverCard() {
     const { ref, inView } = useInView({
         threshold: 0.2,
@@ -16,7 +16,7 @@ export default function DiscoverCard() {
         </div>
         <div className={styles.decouverteContent}>
           <div className={styles.decouverteImage}>
-              <img src={beach} alt="About"  />
+              <img src="/villak/images/beach.jpg" alt="About"  />
           </div>
           <div className={styles.decouverteText}>
             <p>

@@ -1,17 +1,17 @@
 import { useState } from 'react'
-import styles from './App.module.css'
+import styles from './Caroussel.module.css'
 import React from 'react'
 import FullScreenImage from './FullScreenImage'
 
-import img1 from './assets/DSCF3980_edit.jpeg'
-import img2 from './assets/DSCF3985_edit.jpeg'
-import img3 from './assets/DSCF3990_1_edit.jpeg'
-import img4 from './assets/DSCF3991_edit.jpeg'
-import img5 from './assets/DSCF3996_edit.jpeg'
-import img6 from './assets/DSCF3998_edit.jpeg'
-import img7 from './assets/DSCF3999_1_edit.jpeg'
-import img8 from './assets/DSCF4002_edit.jpeg'
-import img9 from './assets/DSCF4003_edit.jpeg'
+const img1 = '/villak/images/DSCF3980_edit.jpeg'
+const img2 = '/villak/images/DSCF3985_edit.jpeg'
+const img3 = '/villak/images/DSCF3990_1_edit.jpeg'
+const img4 = '/villak/images/DSCF3991_edit.jpeg'
+const img5 = '/villak/images/DSCF3996_edit.jpeg'
+const img6 = '/villak/images/DSCF3998_edit.jpeg'
+const img7 = '/villak/images/DSCF3999_1_edit.jpeg'
+const img8 = '/villak/images/DSCF4002_edit.jpeg'
+const img9 = '/villak/images/DSCF4003_edit.jpeg'
 
 function Caroussel() {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -59,7 +59,7 @@ function Caroussel() {
     }
 
     return (
-            <div className={styles.carousel}>
+            <div className={styles.carousel} >
 
                 {openImage && <FullScreenImage 
                     image={images[currentIndex]} 

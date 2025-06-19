@@ -3,11 +3,12 @@ import styles from './Hero.module.css';
 import Video from './Video';
 import Arrow from './Down-arrow';
 import VideoScreen from './VideoScreen';
-import heroImage from './assets/hero.png';
+const heroImage = '/villak/images/hero.png';
 import VideoButton from './VideoButton';
 import CallToAction from './CallToAction';
 import MobileReservationButton from './MobileReservationButton';
 import MobileVideoButton from './MobileVideoButton';
+import Header from './Header';
 // Ajout du hook personnalisé
 const useElementOnScreen = (options) => {
   const containerRef = useRef(null);
@@ -30,6 +31,7 @@ const useElementOnScreen = (options) => {
 
 const Hero = (props) => {
   // Ajout des états nécessaires
+  const [videoOpen, setVideoOpen] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [heroTitleRef, isHeroTitleVisible] = useElementOnScreen({
     threshold: 0.4,
@@ -44,7 +46,8 @@ const Hero = (props) => {
   // Correction de useelement et ajout de la logique d'apparition
   return (
     <>
-    {props.videoOpen && <VideoScreen videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />}
+
+    {videoOpen && <VideoScreen videoOpen={videoOpen} setVideoOpen={setVideoOpen} />}
     <section className={styles.hero} id="hero">
       <MobileReservationButton />
       
@@ -75,7 +78,7 @@ const Hero = (props) => {
                         LOCATION DE VACANCES AU MOULE
                     </h2>
                     <CallToAction />
-                    <VideoButton videoOpen={props.videoOpen} setVideoOpen={props.setVideoOpen} />
+                    <VideoButton videoOpen={videoOpen} setVideoOpen={setVideoOpen} />
                 </div>
             </div>
             <div className={styles.heroArrow}>

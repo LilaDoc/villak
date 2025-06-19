@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import styles from './App.module.css';
-import videoImage from './assets/videoImage.png';
+const videoImage = '/villak/images/videoImage.png';
 
 const VideoButton = (props) => {
   const [isDark, setIsDark] = useState(true);

@@ -198,5 +198,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
+# Astro build cache
 .astro/

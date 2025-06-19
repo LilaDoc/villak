@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import styles from './App.module.css'
-import videoSource from './assets/website.mp4'
+const videoSource = '/villak/images/website.mp4';
 
 const Video = forwardRef((props, ref) => {
     return (

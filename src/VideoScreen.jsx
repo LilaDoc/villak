@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './App.module.css';
-import closeIcon from './assets/close.svg';
+
 const VideoScreen = (props) => {
   return (
     <div className={styles.videoScreen}>
         <div className={styles.videoScreenContent}>
           <div className={styles.ScreenClose}>
             <button onClick={() => props.setVideoOpen(false)}>
-              <img src={closeIcon} alt="close" />
+              <img src="/villak/images/close.svg" alt="close" width="30" height="30" />
             </button>
           </div>
         <iframe

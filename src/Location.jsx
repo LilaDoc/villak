@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.css'
-import map from './assets/map.png';
+const map = '/villak/images/map.png';
 
 export default function Location() {
     return (

@@ -774,7 +774,7 @@ h3{
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url('/villak/images/black-shadow-leaves-with-sunlight-white-backdrop.jpg');
+  background-image: url('/images/black-shadow-leaves-with-sunlight-white-backdrop.jpg');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -1062,7 +1062,7 @@ h3{
     gap: 5rem;
     margin: 10rem;
     border-radius: 5px;
-    background-image: url('/villak/images/shadow-leaves.jpg');
+    background-image: url('/images/shadow-leaves.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

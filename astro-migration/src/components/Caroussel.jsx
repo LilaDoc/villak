@@ -10,15 +10,15 @@ const Caroussel = () => {
     const [openImage, setOpenImage] = useState(false)
 
     const images = [
-        '/images/DSCF3980_edit.jpeg',
-        '/images/DSCF3985_edit.jpeg',
-        '/images/DSCF3990_1_edit.jpeg',
-        '/images/DSCF3991_edit.jpeg',
-        '/images/DSCF3996_edit.jpeg',
-        '/images/DSCF3998_edit.jpeg',
-        '/images/DSCF3999_1_edit.jpeg',
-        '/images/DSCF4002_edit.jpeg',
-        '/images/DSCF4003_edit.jpeg'
+        '/vilakarib/images/DSCF3980_edit.jpeg',
+        '/vilakarib/images/DSCF3985_edit.jpeg',
+        '/vilakarib/images/DSCF3990_1_edit.jpeg',
+        '/vilakarib/images/DSCF3991_edit.jpeg',
+        '/vilakarib/images/DSCF3996_edit.jpeg',
+        '/vilakarib/images/DSCF3998_edit.jpeg',
+        '/vilakarib/images/DSCF3999_1_edit.jpeg',
+        '/vilakarib/images/DSCF4002_edit.jpeg',
+        '/vilakarib/images/DSCF4003_edit.jpeg'
     ]
 
 

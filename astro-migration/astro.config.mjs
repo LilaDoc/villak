@@ -4,6 +4,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [react()],
   // Configuration pour GitHub Pages
+  site: 'https://liladoc.github.io',
   base: '/vilakarib/', // Remplacez par le nom de votre repo
   build: {
     assets: '_astro'
